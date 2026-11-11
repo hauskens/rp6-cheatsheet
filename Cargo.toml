@@ -8,7 +8,7 @@ description = "Interactive cheatsheet for the Roland P-6 sampler, in the termina
 anyhow = "1"
 serde = { version = "1", features = ["derive"] }
 ratatui = { version = "0.30", default-features = false, features = ["std", "all-widgets", "layout-cache", "underline-color", "unstable-rendered-line-info"] }
-toml = "0.8"
+toml = "1.2"
 fuzzy-matcher = "0.3"
 web-time = "1"
 
