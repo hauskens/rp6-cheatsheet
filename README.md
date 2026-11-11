@@ -2,9 +2,14 @@
 
 Interactive cheatsheet for the Roland P-6 sampler. It runs in the terminal, and in the browser.
 
+**Try it in the browser: <https://hauskens.github.io/rp6-cheatsheet/>**
+
 - Search
+- Vim keybindings
 - Interactive map of buttons
 - Key press instructions
+
+![P-6 cheatsheet showing the Browse view and the drawing of the unit](docs/demo.png)
 
 ## Development
 
@@ -28,8 +33,10 @@ The dev shell is managed by [devenv](https://devenv.sh) (`devenv shell` or `deve
 
 `.github/workflows/pages.yml` builds the site on every push to `main` and publishes it to
 GitHub Pages. In the repository settings, set **Pages → Source** to **GitHub Actions**.
-The site is served at `https://<user>.github.io/<repo>/`.
+The site is served at <https://hauskens.github.io/rp6-cheatsheet/>.
 
 ## Disclaimer
+
+This project is mostly vibe coded, it had a few iterations before i moved it to a independent repo.
 
 > Roland and AIRA are trademarks of Roland Corporation. This is an unofficial, independent project, not affiliated with or endorsed by Roland.
