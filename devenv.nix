@@ -18,6 +18,6 @@
   };
 
   enterShell = ''
-    echo "rp6-tui: tui | web | web-build [/public-url/]"
+    echo "rp6-cheatsheet: tui | web | web-build [/public-url/]"
   '';
 }

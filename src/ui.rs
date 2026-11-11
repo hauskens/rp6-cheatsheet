@@ -121,7 +121,7 @@ fn draw_unit(f: &mut Frame, app: &App, area: Rect, entry: Option<usize>) {
     let blink_on = (elapsed / BLINK_MS).is_multiple_of(2);
 
     // Top border: the sequence spelled out, current step highlighted.
-    let mut title = vec![Span::styled(" P-6 ", Style::new().fg(DIM).bold())];
+    let mut title = vec![Span::styled("", Style::new().fg(DIM).bold())];
     if !frames.is_empty() {
         title.push(Span::raw(" "));
         for (i, fr) in frames.iter().enumerate() {

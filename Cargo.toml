@@ -1,5 +1,5 @@
 [package]
-name = "rp6-tui"
+name = "rp6-cheatsheet"
 version = "0.1.0"
 edition = "2024"
 description = "Interactive cheatsheet for the Roland P-6 sampler, in the terminal and the browser"

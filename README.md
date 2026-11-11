@@ -1,11 +1,14 @@
-# rp6-tui
+# rp6-cheatsheet
 
-Interactive cheatsheet for the Roland P-6 sampler. It runs in the terminal, and in the
-browser through [Ratzilla](https://github.com/orhun/ratzilla) (ratatui on WebAssembly).
+Interactive cheatsheet for the Roland P-6 sampler. It runs in the terminal, and in the browser.
+
+- Search
+- Interactive map of buttons
+- Key press instructions
 
 ## Development
 
-The dev shell is managed by [devenv](https://devenv.sh) (`direnv allow`, or `devenv shell`):
+The dev shell is managed by [devenv](https://devenv.sh) (`devenv shell` or `devenv allow`):
 
 | Command                 | What it does                                          |
 | ----------------------- | ----------------------------------------------------- |
@@ -26,3 +29,7 @@ The dev shell is managed by [devenv](https://devenv.sh) (`direnv allow`, or `dev
 `.github/workflows/pages.yml` builds the site on every push to `main` and publishes it to
 GitHub Pages. In the repository settings, set **Pages → Source** to **GitHub Actions**.
 The site is served at `https://<user>.github.io/<repo>/`.
+
+## Disclaimer
+
+> Roland and AIRA are trademarks of Roland Corporation. This is an unofficial, independent project, not affiliated with or endorsed by Roland.

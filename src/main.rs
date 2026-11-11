@@ -1,7 +1,7 @@
 //! Front ends: crossterm in a terminal, Ratzilla (WebAssembly) in the browser.
 
 use anyhow::Result;
-use rp6_tui::App;
+use rp6_cheatsheet::App;
 
 fn main() -> Result<()> {
     let app = App::load()?;
@@ -14,7 +14,7 @@ mod platform {
 
     use anyhow::Result;
     use ratatui::crossterm::event::{self, Event, KeyCode as K, KeyEvent, KeyEventKind, KeyModifiers};
-    use rp6_tui::{App, Key, KeyCode};
+    use rp6_cheatsheet::{App, Key, KeyCode};
 
     fn key(ev: KeyEvent) -> Key {
         let code = match ev.code {
@@ -44,7 +44,7 @@ mod platform {
                     terminal.clear()?;
                     app.needs_clear = false;
                 }
-                terminal.draw(|f| rp6_tui::draw(f, &mut app))?;
+                terminal.draw(|f| rp6_cheatsheet::draw(f, &mut app))?;
                 // Redraw periodically so the key-press animation keeps moving.
                 if !event::poll(Duration::from_millis(50))? {
                     continue;
@@ -71,7 +71,7 @@ mod platform {
     use ratzilla::event::{KeyCode as K, KeyEvent};
     use ratzilla::ratatui::Terminal;
     use ratzilla::{DomBackend, WebRenderer};
-    use rp6_tui::{App, Key, KeyCode};
+    use rp6_cheatsheet::{App, Key, KeyCode};
 
     fn key(ev: KeyEvent) -> Key {
         let code = match ev.code {
@@ -104,7 +104,7 @@ mod platform {
             })
             .map_err(|e| anyhow!("{e}"))?;
         // Ratzilla redraws every animation frame, which keeps the key-press blinking going.
-        terminal.draw_web(move |f| rp6_tui::draw(f, &mut app.borrow_mut()));
+        terminal.draw_web(move |f| rp6_cheatsheet::draw(f, &mut app.borrow_mut()));
         Ok(())
     }
 }
