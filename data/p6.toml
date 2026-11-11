@@ -1,0 +1,3139 @@
+# Roland P-6 cheatsheet data.
+# Source: Roland P-6 Owner's Manual (firmware 1.02 era). Page numbers refer to that PDF.
+#
+# Conventions:
+#   "SHIFT + X"      hold SHIFT, press X
+#   "X → Y"          press X, then Y
+#   Step buttons are named by their keyboard note, with the printed function in
+#   parentheses, e.g. "C# (ENTER)". Sharps are written "#" (the manual prints ´).
+#   Display codes are written as they read on the 4-digit 7-segment display.
+#   Several codes for one entry are separated by " / " (a code itself may contain spaces).
+
+# ───────────────────────────── groups / sections ─────────────────────────────
+
+[[group]]
+id = "panel"
+title = "Panel controls"
+
+[[group]]
+id = "shortcuts"
+title = "Shortcuts"
+
+[[group]]
+id = "menus"
+title = "Menus & parameters"
+
+[[group]]
+id = "effects"
+title = "MFX effects"
+
+[[group]]
+id = "howto"
+title = "How to…"
+
+[[group]]
+id = "ref"
+title = "Reference"
+
+[[section]]
+id = "p-common"
+group = "panel"
+title = "Common"
+
+[[section]]
+id = "p-fx"
+group = "panel"
+title = "Effect section"
+
+[[section]]
+id = "p-sample"
+group = "panel"
+title = "Sample editing"
+
+[[section]]
+id = "p-pads"
+group = "panel"
+title = "Pads"
+
+[[section]]
+id = "p-steps"
+group = "panel"
+title = "Step / keyboard buttons"
+
+[[section]]
+id = "p-io"
+group = "panel"
+title = "Jacks, ports & power"
+
+[[section]]
+id = "s-shift"
+group = "shortcuts"
+controls = ["shift"]
+title = "Hold SHIFT +"
+
+[[section]]
+id = "s-pattern"
+group = "shortcuts"
+controls = ["pattern"]
+title = "Hold PATTERN +"
+
+[[section]]
+id = "s-kybd"
+group = "shortcuts"
+controls = ["kybd"]
+title = "Hold KYBD +"
+
+[[section]]
+id = "s-mfx"
+group = "shortcuts"
+controls = ["mfx"]
+title = "Hold MFX +"
+
+[[section]]
+id = "s-pad"
+group = "shortcuts"
+title = "Hold a pad +"
+
+[[section]]
+id = "s-step"
+group = "shortcuts"
+title = "Hold a step button +"
+
+[[section]]
+id = "s-power"
+group = "shortcuts"
+controls = ["power"]
+title = "Hold while powering on"
+
+[[section]]
+id = "m-menu"
+group = "menus"
+controls = ["shift", "oct-up", "tempo", "k-cs", "k-c"]
+combo = "SHIFT + OCT+ (MENU)"
+nav = "TEMPO/VALUE → C# (ENTER)"
+title = "MENU (SHIFT + OCT+)"
+
+[[section]]
+id = "m-penv"
+group = "menus"
+controls = ["shift", "k-fs", "tempo", "k-cs", "k-c"]
+combo = "SHIFT + F# (P.ENV)"
+nav = "TEMPO/VALUE → C# (ENTER)"
+title = "P.ENV (SHIFT + F#)"
+
+[[section]]
+id = "m-voice"
+group = "menus"
+controls = ["shift", "k-g", "tempo", "k-cs", "k-c"]
+combo = "SHIFT + G (VOICE)"
+nav = "TEMPO/VALUE → C# (ENTER)"
+title = "VOICE (SHIFT + G)"
+
+[[section]]
+id = "m-filter"
+group = "menus"
+controls = ["shift", "k-gs", "tempo", "k-cs", "k-c"]
+combo = "SHIFT + G# (FILTER)"
+nav = "TEMPO/VALUE → C# (ENTER)"
+title = "FILTER (SHIFT + G#)"
+
+[[section]]
+id = "m-mixer"
+group = "menus"
+controls = ["shift", "k-a", "tempo", "k-cs", "k-c"]
+combo = "SHIFT + A (MIXER)"
+nav = "TEMPO/VALUE → C# (ENTER)"
+title = "MIXER (SHIFT + A)"
+
+[[section]]
+id = "m-dlyrev"
+group = "menus"
+controls = ["shift", "k-as", "tempo", "k-cs", "k-c"]
+combo = "SHIFT + A# (DELAY/REVERB)"
+nav = "TEMPO/VALUE → C# (ENTER)"
+title = "DELAY/REVERB (SHIFT + A#)"
+
+[[section]]
+id = "m-write"
+group = "menus"
+controls = ["shift", "tie", "tempo", "k-cs"]
+combo = "SHIFT + TIE (WRITE)"
+title = "WRITE (SHIFT + TIE)"
+
+[[section]]
+id = "m-copy"
+group = "menus"
+controls = ["shift", "play", "tempo", "k-cs"]
+combo = "SHIFT + ▶ (COPY)"
+title = "COPY (SHIFT + PLAY)"
+
+[[section]]
+id = "m-stepedit"
+group = "menus"
+controls = ["rec", "kybd", "oct-up", "tempo", "k-cs"]
+title = "Step tools (KYBD + OCT+)"
+
+[[section]]
+id = "m-stepdata"
+group = "menus"
+controls = ["steps", "granular", "tempo"]
+combo = "Hold step + GRANULAR + turn TEMPO/VALUE"
+title = "Step data (step + GRANULAR)"
+
+[[section]]
+id = "m-lofi"
+group = "menus"
+controls = ["shift", "lofi", "tempo", "k-cs", "k-c"]
+title = "Lo-Fi (SHIFT + LO-FI)"
+
+[[section]]
+id = "m-sampling"
+group = "menus"
+controls = ["sampling"]
+combo = "SAMPLING"
+title = "Sampling mode controls"
+
+[[section]]
+id = "fx"
+group = "effects"
+controls = ["mfx", "ctrl1", "ctrl2", "ctrl3"]
+title = "All 20 effects"
+
+[[section]]
+id = "h-play"
+group = "howto"
+title = "Play samples"
+
+[[section]]
+id = "h-sample"
+group = "howto"
+title = "Sample"
+
+[[section]]
+id = "h-granular"
+group = "howto"
+title = "Granular sampler"
+
+[[section]]
+id = "h-pattern"
+group = "howto"
+title = "Patterns & playback"
+
+[[section]]
+id = "h-rec"
+group = "howto"
+title = "Record & sequence"
+
+[[section]]
+id = "h-fx"
+group = "howto"
+title = "Effects & buses"
+
+[[section]]
+id = "h-data"
+group = "howto"
+title = "Save, backup, connect"
+
+[[section]]
+id = "r-knobs"
+group = "ref"
+title = "Knob functions by screen"
+
+[[section]]
+id = "r-misc"
+group = "ref"
+title = "MIDI & storage"
+
+# ───────────────────────────── panel layout ─────────────────────────────
+# Schematic only: grouped by the manual's panel sections, not physical positions.
+
+[[panel]]
+title = "Common"
+items = ["display", "tempo", "shift", "pattern", "play", "rec"]
+
+[[panel]]
+title = "Effects"
+items = ["ctrl1", "ctrl2", "ctrl3", "looper", "pitch-fx", "delay", "filter", "scatter", "mfx"]
+
+[[panel]]
+title = "Sample editing"
+items = ["pitch", "start", "end", "level", "sampling", "lofi", "gate", "delete", "loop", "bank"]
+
+[[panel]]
+title = "Pads"
+items = ["pads", "granular"]
+
+[[panel]]
+title = "Step / keyboard"
+items = ["steps", "kybd", "k-c", "k-cs", "k-d", "k-ds", "k-e", "k-f", "k-fs", "k-g", "k-gs", "k-a", "k-as", "k-b", "k-c2", "oct-down", "oct-up", "tie"]
+
+[[panel]]
+title = "Jacks & ports"
+items = ["volume", "charge", "sync-in", "sync-out", "mix-in", "mix-out", "power", "usb", "midi"]
+
+# ───────────────────────────── panel: common ─────────────────────────────
+
+[[entry]]
+section = "p-common"
+id = "display"
+short = "DISPLAY"
+name = "Display"
+summary = "Four-digit, seven-segment LED display. Shows the tempo on the top screen."
+notes = [
+  "A dot in the lower right means the current pattern has unsaved edits. It disappears after WRITE.",
+  "Letters are approximated on 7 segments, e.g. 'm' looks like a three-legged n and 'W' like a reversed u.",
+]
+page = 5
+
+[[entry]]
+section = "p-common"
+id = "tempo"
+short = "TEMPO/VALUE"
+name = "TEMPO/VALUE knob"
+summary = "Changes the value shown on the display: the tempo on the top screen, or the selected parameter/value inside menus."
+values = [
+  ["Turn", "Tempo 40.0–300.0 (top screen), or select a parameter or value in menus"],
+  ["SHIFT + turn", "Fine tempo in 0.1 steps; in menus, larger jumps for sample-time values"],
+  ["PATTERN + turn", "Pattern Scale (step length)"],
+  ["KYBD + turn", "Master probability, -100–100 (not saved)"],
+  ["MFX + turn", "Select the MFX effect"],
+]
+page = 5
+
+[[entry]]
+section = "p-common"
+id = "shift"
+short = "SHIFT"
+name = "SHIFT button"
+summary = "Hold it with other controls to reach their secondary functions (labels printed under the buttons)."
+notes = ["While in sampling mode, holding SHIFT shows the input peak level."]
+page = 5
+
+[[entry]]
+section = "p-common"
+id = "pattern"
+short = "PATTERN"
+name = "PATTERN button"
+summary = "Switches to pattern selection mode, where the step buttons choose the pattern (1–16). Also a modifier for many shortcuts."
+values = [
+  ["Press", "Enter/exit pattern selection mode"],
+  ["Hold + step 1–4", "Select pattern bank 1–4"],
+  ["SHIFT + PATTERN", "Step loop mode (button blinks)"],
+]
+page = 5
+
+[[entry]]
+section = "p-common"
+id = "play"
+short = "PLAY"
+name = "▶ (PLAY / COPY) button"
+summary = "Plays the current pattern. Press again to stop. Its secondary function is COPY."
+values = [
+  ["Press", "Start/stop pattern playback"],
+  ["SHIFT + ▶", "COPY menu: Ptn / dUPL / PArt"],
+  ["Hold pad + SHIFT + ▶", "Copy or swap a sample (COPY / EXCG)"],
+  ["Hold ▶ at power-on", "Pattern backup mass-storage mode"],
+]
+page = 5
+
+[[entry]]
+section = "p-common"
+id = "rec"
+short = "REC"
+name = "● (REC / QUANTIZE) button"
+summary = "Puts the pattern into record standby for real-time input; press ▶ to start recording. When stopped, it enters step edit ('St.' + step number)."
+values = [
+  ["Press", "Record standby (then ▶ to record), or step edit mode when not playing"],
+  ["SHIFT + ●", "Toggle REC quantize (On/OFF)"],
+  ["PATTERN + ●", "Toggle metronome (m.OFF / m.PLY)"],
+  ["Hold pad + ●", "Toggle Play Quantize for that pad"],
+  ["Hold ● at power-on", "Pattern restore mass-storage mode"],
+]
+page = 5
+
+# ───────────────────────────── panel: effects ─────────────────────────────
+
+[[entry]]
+section = "p-fx"
+id = "ctrl1"
+short = "CTRL1"
+name = "CTRL1 knob"
+summary = "Controls the first parameter of the current effect. Inside some SAMPLE EDIT screens it controls a sound parameter instead."
+values = [
+  ["Top / MIXER / DLY-REV screens", "1st parameter of the selected effect"],
+  ["SHIFT + CTRL1", "4th parameter of the selected effect (if any)"],
+  ["P.ENV screen", "P.Env Time Key Follow"],
+  ["VOICE screen (GRANULAR)", "Spread"],
+  ["FILTER screen", "Filter Cutoff Key Follow"],
+]
+notes = ["CTRL1–3 movements cannot be recorded as motions."]
+page = 121
+
+[[entry]]
+section = "p-fx"
+id = "ctrl2"
+short = "CTRL2"
+name = "CTRL2 knob"
+summary = "Controls the second parameter of the current effect, or a sound parameter in some SAMPLE EDIT screens."
+values = [
+  ["Top / MIXER / DLY-REV screens", "2nd parameter of the selected effect"],
+  ["SHIFT + CTRL2", "5th parameter of the selected effect (if any)"],
+  ["P.ENV screen", "P.Env Velocity Sens"],
+  ["VOICE screen (GRANULAR)", "Grains"],
+  ["FILTER screen", "Filter Velocity Sens"],
+]
+page = 121
+
+[[entry]]
+section = "p-fx"
+id = "ctrl3"
+short = "CTRL3"
+name = "CTRL3 knob"
+summary = "Controls the third parameter of the current effect, or a sound parameter in some SAMPLE EDIT screens."
+values = [
+  ["Top / MIXER / DLY-REV screens", "3rd parameter of the selected effect"],
+  ["SHIFT + CTRL3", "6th parameter of the selected effect (if any)"],
+  ["P.ENV screen", "P.Env Envelope Depth"],
+  ["VOICE screen (GRANULAR)", "Grain Shape"],
+]
+page = 121
+
+[[entry]]
+section = "p-fx"
+id = "looper"
+short = "LOOPER"
+name = "LOOPER button"
+controls = ["looper"]
+summary = "Toggles the DJFX Looper effect: short loops with variable direction and speed (turntable-style)."
+values = [
+  ["CTRL1 / 2 / 3", "LENGTH / SPEED / LOOP SW"],
+  ["PATTERN + LOOPER", "Effect grab: active only while held"],
+]
+page = 5
+
+[[entry]]
+section = "p-fx"
+id = "pitch-fx"
+short = "PITCH(fx)"
+name = "PITCH button (effect)"
+summary = "Toggles Chromatic PS, a two-voice pitch shifter in semitone steps. Not the same control as the PITCH knob."
+values = [
+  ["CTRL1 / 2 / 3", "PITCH1 / PITCH2 / BALANCE"],
+  ["SHIFT + CTRL1 / 2", "PAN1 / PAN2"],
+  ["PATTERN + PITCH", "Effect grab: active only while held"],
+]
+page = 5
+
+[[entry]]
+section = "p-fx"
+id = "delay"
+short = "DELAY"
+name = "DELAY button"
+summary = "Toggles Sync Delay (tempo-synced echo). With MFX held, it also chooses BUS B for bus routing."
+values = [
+  ["CTRL1 / 2 / 3", "TIME / FEEDBACK / LEVEL"],
+  ["SHIFT + CTRL1 / 2", "L DAMP F / H DAMP F"],
+  ["MFX + DELAY + pad", "Toggle that source between BUS B and BUS EFFECT"],
+  ["PATTERN + DELAY", "Effect grab: active only while held"],
+]
+page = 5
+
+[[entry]]
+section = "p-fx"
+id = "filter"
+short = "FILTER"
+name = "FILTER button"
+summary = "Toggles Filter+Drive, a filter with overdrive."
+values = [
+  ["CTRL1 / 2 / 3", "CUTOFF / RESONANCE / DRIVE"],
+  ["SHIFT + CTRL1 / 2 / 3", "FLT TYPE / LOW FREQ / LOW GAIN"],
+  ["PATTERN + FILTER", "Effect grab: active only while held"],
+]
+page = 5
+
+[[entry]]
+section = "p-fx"
+id = "scatter"
+short = "SCATTER"
+name = "SCATTER button"
+summary = "Toggles Scatter, which rearranges the loop step by step (direction, gate length) for a glitchy groove."
+values = [
+  ["CTRL1 / 2 / 3", "TYPE / DEPTH / SCATTER on-off"],
+  ["SHIFT + CTRL1", "SPEED"],
+  ["PATTERN + SCATTER", "Effect grab: active only while held"],
+]
+page = 5
+
+[[entry]]
+section = "p-fx"
+id = "mfx"
+short = "MFX"
+name = "MFX button"
+summary = "Turns the selected MFX effect on/off. Hold it to pick any of the 20 effects, or to route sources to buses."
+values = [
+  ["Press", "MFX on/off"],
+  ["MFX + step button", "Select an effect"],
+  ["MFX + TEMPO/VALUE", "Select an effect"],
+  ["MFX + pad / GRANULAR", "Toggle BUS A ↔ BUS EFFECT"],
+  ["MFX + DELAY + pad", "Toggle BUS B ↔ BUS EFFECT"],
+  ["MFX + LO-FI", "Route external input (MIX IN / mic) A ↔ EFFECT"],
+  ["MFX + GATE", "Route USB audio input A ↔ EFFECT"],
+]
+page = 5
+
+# ───────────────────────────── panel: sample editing ─────────────────────────────
+
+[[entry]]
+section = "p-sample"
+id = "pitch"
+short = "PITCH"
+name = "PITCH knob"
+summary = "Sets the sample pitch (Coarse Tune) on the top screen. Changes meaning per screen."
+values = [
+  ["Top screen", "Coarse Tune (-24–24 semitones)"],
+  ["P.ENV", "P.Env Attack"],
+  ["VOICE", "T.Env Attack"],
+  ["FILTER", "Filter Type"],
+  ["MIXER", "Pan"],
+  ["DELAY/REVERB", "Delay Time"],
+  ["Sampling mode", "Mono / Stereo"],
+  ["SHIFT + turn (sampling)", "Step sampling slices: S.OFF, S. 2–S. 64"],
+  ["SHIFT + turn (MIXER)", "BUS A volume (not saved)"],
+  ["Hold step + turn", "Record a motion into that step"],
+]
+page = 5
+
+[[entry]]
+section = "p-sample"
+id = "start"
+short = "START"
+name = "START knob"
+summary = "Sets where the sample starts playing (Start Position). For GRANULAR it is the Head Position."
+values = [
+  ["Top screen", "Start Position (GRANULAR: Head Position)"],
+  ["P.ENV", "P.Env Decay"],
+  ["VOICE", "T.Env Decay"],
+  ["FILTER", "Filter Cutoff Frequency"],
+  ["MIXER", "Send Delay"],
+  ["DELAY/REVERB", "Delay Level"],
+  ["Sampling mode", "Sample length: FREE, m.1/4, m.2/4, m.3/4, m. 1–m. 29 (measures)"],
+  ["SHIFT + turn (MIXER)", "BUS B volume (not saved)"],
+  ["Hold step + turn", "Record a motion into that step"],
+]
+page = 5
+
+[[entry]]
+section = "p-sample"
+id = "end"
+short = "END"
+name = "END knob"
+summary = "Sets where the sample stops playing (Size). For GRANULAR it is the Grain Size."
+values = [
+  ["Top screen", "Size / Loop Size (GRANULAR: Grain Size)"],
+  ["P.ENV", "P.Env Sustain"],
+  ["VOICE", "T.Env Sustain"],
+  ["FILTER", "Filter Resonance"],
+  ["MIXER", "Send Reverb"],
+  ["DELAY/REVERB", "Reverb Time"],
+  ["Sampling mode", "Start trigger: t.OFF, SynC, -3db … -24d"],
+  ["SHIFT + turn (MIXER)", "BUS EFFECT volume (not saved)"],
+  ["Hold step + turn", "Record a motion into that step"],
+]
+page = 5
+
+[[entry]]
+section = "p-sample"
+id = "level"
+short = "LEVEL"
+name = "LEVEL knob"
+summary = "Sets the sample volume (Level 0–127, 100 = 0 dB)."
+values = [
+  ["Top screen", "Level"],
+  ["P.ENV", "P.Env Release"],
+  ["VOICE", "T.Env Release"],
+  ["FILTER", "Filter Envelope Depth"],
+  ["MIXER", "Level"],
+  ["DELAY/REVERB", "Reverb Level"],
+  ["Sampling mode", "Mic sensitivity G. 0–G.255"],
+  ["Hold step + turn", "Record a motion into that step"],
+]
+page = 5
+
+[[entry]]
+section = "p-sample"
+id = "sampling"
+short = "SAMPLING"
+name = "SAMPLING button"
+summary = "Enters sampling mode (lit). Choose an empty, blinking pad, then press SAMPLING to start and again to stop."
+values = [
+  ["Press", "Enter sampling mode / start / stop recording"],
+  ["Hold at power-on", "Sample import mass-storage mode"],
+  ["Hold with bank buttons at power-on", "Export banks E–H"],
+]
+notes = ["In sampling mode the step buttons act as an input level meter."]
+page = 6
+
+[[entry]]
+section = "p-sample"
+id = "lofi"
+short = "LO-FI"
+name = "LO-FI button"
+summary = "Toggles the Lo-Fi (bit-reduction) effect for the selected pad. In sampling mode it sets the sample rate."
+values = [
+  ["Press", "Lo-Fi on/off for the selected pad"],
+  ["SHIFT + LO-FI", "Lo-Fi menu: LoFi intensity / SmP.r (show sample rate)"],
+  ["In sampling mode", "Cycle sample rate 44.1k / 22.0k / 14.7k / 11.0k"],
+  ["MFX + LO-FI", "Route external input BUS A ↔ BUS EFFECT"],
+]
+page = 6
+
+[[entry]]
+section = "p-sample"
+id = "gate"
+short = "GATE"
+name = "GATE button"
+summary = "Playback mode for the selected pad. Off = one-shot (plays to the end), On = gate (plays only while held)."
+values = [
+  ["Press", "Gate / one-shot"],
+  ["SHIFT + GATE", "Polyphonic (PoLy) ↔ monophonic (mono)"],
+  ["MFX + GATE", "Route USB audio input BUS A ↔ BUS EFFECT"],
+]
+page = 6
+
+[[entry]]
+section = "p-sample"
+id = "delete"
+short = "DELETE"
+name = "DELETE button"
+summary = "Deletes a sample from a pad: DELETE ('dEL') → pick a blinking pad → DELETE. In sampling mode it mutes the mic."
+values = [
+  ["Press", "Delete-sample mode"],
+  ["In sampling mode", "Mic mute on (lit) / off (dim)"],
+]
+page = 6
+
+[[entry]]
+section = "p-sample"
+id = "loop"
+short = "LOOP"
+name = "LOOP button"
+summary = "Loop playback for the selected pad."
+values = [
+  ["Press", "Loop on/off"],
+  ["SHIFT + LOOP", "Playback direction: FrWd (dim) → rvrS (lit) → ALt (blinking)"],
+]
+notes = ["In one-shot mode (GATE off) a looping pad keeps playing until you press it again."]
+page = 6
+
+[[entry]]
+section = "p-sample"
+id = "bank"
+short = "BANK A/E–D/H"
+name = "BANK [A/E]–[D/H] buttons"
+summary = "Select the pad bank. Press once for A–D (lit), twice for E–H (blinking). 8 banks × 6 pads = 48 samples."
+values = [
+  ["Press once", "Bank A–D (lit)"],
+  ["Press twice", "Bank E–H (blinking)"],
+  ["SHIFT + bank", "Mute/unmute every pad in that bank"],
+  ["Hold at power-on", "Export those banks (A–D); add SAMPLING for E–H"],
+]
+page = 6
+
+# ───────────────────────────── panel: pads ─────────────────────────────
+
+[[entry]]
+section = "p-pads"
+id = "pads"
+short = "PADS 1–6"
+name = "Sample pads [1]–[6]"
+summary = "Play the samples of the current bank. Pad settings are global and shared by every pattern."
+values = [
+  ["Press", "Play and select the pad"],
+  ["PATTERN + pad", "Select without playing"],
+  ["SHIFT + pad", "Mute/unmute the pad (saved per pattern)"],
+  ["Hold pad + KYBD", "Hold (latch) the pad, if GATE is on"],
+  ["Hold pad + ●", "Toggle Play Quantize for the pad"],
+  ["Hold pad + SHIFT + ▶", "Copy / swap sample"],
+  ["Hold step + pad", "Cycle step velocity: StrG / mEdi / WEAK"],
+]
+page = 6
+
+[[entry]]
+section = "p-pads"
+id = "granular"
+short = "GRANULAR"
+name = "GRANULAR pad"
+summary = "Triggers the granular sampler, which builds sound from tiny 'grains' of a chosen sample. Its tone settings are saved per pattern."
+values = [
+  ["Press", "Play the granular sampler"],
+  ["PATTERN + GRANULAR", "Select without playing"],
+  ["PATTERN + GRANULAR + pad", "Assign that pad's sample as granular source"],
+  ["SHIFT + GRANULAR", "Mute/unmute (saved per pattern)"],
+  ["Hold step + GRANULAR", "Cycle the step data shown: note / velocity / probability / gate / micro-timing / sub step"],
+  ["At factory-reset prompt", "Confirm the factory reset"],
+]
+notes = ["If the source sample is stereo, only the L channel is used."]
+page = 6
+
+# ───────────────────────────── panel: steps ─────────────────────────────
+
+[[entry]]
+section = "p-steps"
+id = "steps"
+short = "STEPS 1–16"
+name = "Step buttons (1–16)"
+summary = "Sixteen buttons for step input, pattern/bank selection, effect selection and, when KYBD is lit, a keyboard. Several have a printed secondary function used with SHIFT or inside menus."
+values = [
+  ["Normal", "Toggle a note on that step for the selected pad"],
+  ["Pattern select mode", "Pattern number 1–16"],
+  ["PATTERN + step 1–4", "Pattern bank 1–4"],
+  ["MFX + step", "Select an effect"],
+  ["Step loop mode", "Hold steps to loop them"],
+  ["Sampling mode", "Input level meter (-72 … 0 dB)"],
+  ["KYBD lit", "Chromatic keyboard"],
+]
+notes = [
+  "Left to right (steps 1–16): C, C#, D, D#, E, F, F#, G, G#, A, A#, B, C, OCT-, OCT+, TIE.",
+  "A pattern holds up to 64 steps: 4 pages of 16 (SHIFT + E / F to change page).",
+]
+page = 7
+
+[[entry]]
+section = "p-steps"
+id = "kybd"
+short = "KYBD"
+name = "KYBD (HOLD) button"
+summary = "When lit, the step buttons become a keyboard that plays the selected pad (or GRANULAR) chromatically."
+values = [
+  ["Press", "Keyboard mode on/off"],
+  ["Hold step + KYBD", "Input a tie to the next step (KYBD off)"],
+  ["Hold pad + KYBD", "Hold/latch the pad (GATE on)"],
+  ["KYBD + OCT+", "Reload/Initialize menu; with ● lit: step COPY/PStE/Insr/DUPL"],
+  ["KYBD + TEMPO/VALUE", "Master probability"],
+  ["Hold at power-on", "Factory reset prompt"],
+  ["In import/restore mode", "Execute import or restore"],
+]
+page = 7
+
+[[entry]]
+section = "p-steps"
+id = "k-c"
+short = "C·EXIT"
+name = "C (EXIT)"
+summary = "Keyboard note C. As EXIT it backs out of a menu level or cancels."
+values = [
+  ["In menus", "EXIT: back one level, or cancel"],
+  ["SHIFT + C", "Stop all playing samples"],
+  ["Hold at power-on", "Battery-only mode (don't draw USB power)"],
+]
+page = 115
+
+[[entry]]
+section = "p-steps"
+id = "k-cs"
+short = "C#·ENTER"
+name = "C# (ENTER)"
+summary = "Keyboard note C#. As ENTER it confirms a parameter or value in any menu."
+values = [
+  ["In menus", "ENTER: open the parameter / confirm"],
+  ["SHIFT + C# (after PArt copy)", "Clear the copied sequence from temporary memory"],
+]
+page = 13
+
+[[entry]]
+section = "p-steps"
+id = "k-d"
+short = "D·SHUFFLE"
+name = "D (SHUFFLE)"
+summary = "Keyboard note D. SHIFT + D sets the pattern's shuffle/swing amount."
+values = [["SHIFT + D", "Shuffle -90–90 (0 = straight; 10–16 is a pleasant swing)"]]
+page = 62
+
+[[entry]]
+section = "p-steps"
+id = "k-ds"
+short = "D#·LAST"
+name = "D# (LAST)"
+summary = "Keyboard note D#. SHIFT + D# sets the pattern length (last step)."
+values = [["SHIFT + D#", "Pattern length in steps (up to 64)"]]
+page = 63
+
+[[entry]]
+section = "p-steps"
+id = "k-e"
+short = "E·PAGE<"
+name = "E (PAGE ◀)"
+summary = "Keyboard note E. SHIFT + E moves to the previous 16-step page."
+values = [["SHIFT + E", "Previous page (display: o___ / _o__ / __o_ / ___o)"]]
+page = 51
+
+[[entry]]
+section = "p-steps"
+id = "k-f"
+short = "F·PAGE>"
+name = "F (PAGE ▶)"
+summary = "Keyboard note F. SHIFT + F moves to the next 16-step page."
+values = [["SHIFT + F", "Next page (only up to the LAST step)"]]
+page = 51
+
+[[entry]]
+section = "p-steps"
+id = "k-fs"
+short = "F#·P.ENV"
+name = "F# (P.ENV)"
+summary = "Keyboard note F#. SHIFT + F# opens SAMPLE EDIT (P.ENV): the pitch envelope of the selected pad."
+values = [["SHIFT + F#", "SAMPLE EDIT P.ENV (not available for GRANULAR)"]]
+page = 95
+
+[[entry]]
+section = "p-steps"
+id = "k-g"
+short = "G·VOICE"
+name = "G (VOICE)"
+summary = "Keyboard note G. SHIFT + G opens SAMPLE EDIT (VOICE): tuning, chop, loop points, amp envelope, and granular grain controls."
+values = [["SHIFT + G", "SAMPLE EDIT VOICE"]]
+page = 103
+
+[[entry]]
+section = "p-steps"
+id = "k-gs"
+short = "G#·FILTER"
+name = "G# (FILTER)"
+summary = "Keyboard note G#. SHIFT + G# opens SAMPLE EDIT (FILTER)."
+values = [["SHIFT + G#", "SAMPLE EDIT FILTER"]]
+page = 107
+
+[[entry]]
+section = "p-steps"
+id = "k-a"
+short = "A·MIXER"
+name = "A (MIXER)"
+summary = "Keyboard note A. SHIFT + A opens SAMPLE EDIT (MIXER): level, pan, output bus, delay/reverb sends."
+values = [["SHIFT + A", "SAMPLE EDIT MIXER"]]
+page = 109
+
+[[entry]]
+section = "p-steps"
+id = "k-as"
+short = "A#·DLY/REV"
+name = "A# (DELAY/REVERB)"
+summary = "Keyboard note A#. SHIFT + A# opens the send DELAY/REVERB settings."
+values = [["SHIFT + A#", "DELAY/REVERB settings"]]
+page = 111
+
+[[entry]]
+section = "p-steps"
+id = "k-b"
+short = "B"
+name = "B"
+summary = "Keyboard note B (step 12). The panel prints 'PTN CLEAR' across B, high C and OCT-, but the manual describes no separate B function."
+page = 4
+
+[[entry]]
+section = "p-steps"
+id = "k-c2"
+short = "C(hi)"
+name = "C (high)"
+summary = "Keyboard note C, one octave up (step 13). Part of the panel's 'PTN CLEAR' group, with no separate function in the manual. In sampling mode it is the -3 dB meter segment."
+page = 4
+
+[[entry]]
+section = "p-steps"
+id = "tie"
+short = "TIE·WRITE"
+name = "TIE (WRITE)"
+summary = "In step edit it inputs a tied note. SHIFT + TIE opens WRITE (save)."
+values = [
+  ["Step edit (KYBD lit)", "Input a note tied to the previous step"],
+  ["SHIFT + TIE", "WRITE menu: ALL / PAd / Pd.AL / Ptn / Pt.AL / EFCt"],
+]
+page = 73
+
+[[entry]]
+section = "p-steps"
+id = "oct-down"
+short = "OCT-·MOTION"
+name = "OCT- (MOTION)"
+summary = "Shifts the keyboard down an octave. SHIFT + OCT- clears recorded knob motions."
+values = [
+  ["Press (KYBD lit)", "Octave down (blinks faster the further you shift)"],
+  ["OCT- + OCT+ together", "Reset octave to 0"],
+  ["SHIFT + OCT-", "'CLr.m': ENTER clears all motions (pattern, or current step in step edit); turn a knob first to clear only that one"],
+]
+page = 20
+
+[[entry]]
+section = "p-steps"
+id = "oct-up"
+short = "OCT+·MENU"
+name = "OCT+ (MENU)"
+summary = "Shifts the keyboard up an octave. SHIFT + OCT+ opens the system MENU."
+values = [
+  ["Press (KYBD lit)", "Octave up"],
+  ["OCT- + OCT+ together", "Reset octave to 0"],
+  ["SHIFT + OCT+", "MENU"],
+  ["KYBD + OCT+", "Reload / Initialize items; in step edit: COPY / PStE / Insr / DUPL"],
+]
+page = 90
+
+# ───────────────────────────── panel: io ─────────────────────────────
+
+[[entry]]
+section = "p-io"
+id = "volume"
+short = "VOLUME"
+name = "VOLUME knob"
+summary = "Output volume of the MIX OUT / headset jack (and USB unless USB Direct Out is set)."
+page = 4
+
+[[entry]]
+section = "p-io"
+id = "charge"
+short = "CHARGE"
+name = "CHARGE indicator"
+summary = "Battery and charging status."
+values = [
+  ["Orange", "Charging"],
+  ["Green", "Charged"],
+  ["Green + orange blinking", "Charging error"],
+  ["Red (not charging)", "Battery low; powers down within 30 minutes"],
+]
+page = 4
+
+[[entry]]
+section = "p-io"
+id = "sync-in"
+short = "SYNC IN"
+name = "SYNC IN jack"
+summary = "Analog sync clock input. When connected it always takes priority over the MIDI Clock Sync setting."
+notes = ["Use a mono mini-plug cable.", "Pulses per beat are set with MENU → S.cLk."]
+page = 4
+
+[[entry]]
+section = "p-io"
+id = "sync-out"
+short = "SYNC OUT"
+name = "SYNC OUT jack"
+summary = "Analog sync clock output."
+notes = ["Use a mono mini-plug cable. Never connect an audio device here."]
+page = 4
+
+[[entry]]
+section = "p-io"
+id = "mix-in"
+short = "MIX IN"
+name = "MIX IN jack"
+summary = "Stereo audio input, mixed into MIX OUT and sampleable."
+notes = ["Use a stereo mini-plug cable.", "Gain: MENU → In.G. Bus: MENU → In.b, or MFX + LO-FI."]
+page = 4
+
+[[entry]]
+section = "p-io"
+id = "mix-out"
+short = "MIX OUT/HS"
+name = "MIX OUT / HEADSET jack"
+summary = "Stereo output and headphone jack. A CTIA four-conductor headset also works as a mic input here."
+notes = ["MIX OUT gain: MENU → Out.G (-18–0 dB)."]
+page = 4
+
+[[entry]]
+section = "p-io"
+id = "power"
+short = "POWER"
+name = "POWER switch"
+summary = "Power on/off (rear). Several buttons held at power-on start special modes. See 'Hold while powering on'."
+page = 8
+
+[[entry]]
+section = "p-io"
+id = "usb"
+short = "USB-C"
+name = "USB port (Type-C)"
+summary = "USB audio and MIDI (class compliant, no driver), charging, and mass-storage modes for backup and import."
+notes = [
+  "Use a data-capable cable; charge-only cables won't work.",
+  "Set MENU → A.LnK to OFF for computers and phones; ON only for AIRA LINK devices such as the MX-1. Power-cycle after changing it.",
+]
+page = 8
+
+[[entry]]
+section = "p-io"
+id = "midi"
+short = "MIDI I/O"
+name = "MIDI IN / OUT jacks"
+summary = "TRS MIDI (3.5 mm). Use TRS-TRS (BCC series) or TRS-to-DIN (BMIDI series) cables."
+page = 8
+
+# ───────────────────────────── shortcuts: SHIFT ─────────────────────────────
+
+[[entry]]
+section = "s-shift"
+name = "Mute a pad"
+combo = "SHIFT + pad 1–6"
+controls = ["shift", "pads"]
+summary = "Mute/unmute the pad's notes during pattern playback. Mutes are saved in the pattern."
+page = 42
+
+[[entry]]
+section = "s-shift"
+name = "Mute GRANULAR"
+combo = "SHIFT + GRANULAR"
+controls = ["shift", "granular"]
+summary = "Mute/unmute the GRANULAR pad's notes. Saved in the pattern."
+page = 42
+
+[[entry]]
+section = "s-shift"
+name = "Mute a whole bank"
+combo = "SHIFT + BANK A/E–D/H"
+controls = ["shift", "bank"]
+summary = "Mute/unmute all pads in that bank."
+page = 42
+
+[[entry]]
+section = "s-shift"
+name = "Copy menu"
+combo = "SHIFT + ▶ (COPY)"
+controls = ["shift", "play"]
+summary = "Opens COPY: Ptn (copy pattern), dUPL (double length), PArt (copy one pad's sequence)."
+page = 64
+
+[[entry]]
+section = "s-shift"
+name = "REC quantize"
+combo = "SHIFT + ● (QUANTIZE)"
+controls = ["shift", "rec"]
+summary = "Toggles REC quantize (display On/OFF). When on, real-time notes snap to steps (micro-timing 0)."
+page = 45
+
+[[entry]]
+section = "s-shift"
+name = "Fine tempo"
+combo = "SHIFT + turn TEMPO/VALUE"
+controls = ["shift", "tempo"]
+summary = "Adjust tempo in 0.1 BPM steps."
+page = 40
+
+[[entry]]
+section = "s-shift"
+name = "Bus volumes"
+combo = "SHIFT + PITCH / START / END (in MIXER)"
+controls = ["shift", "pitch", "start", "end", "k-a"]
+summary = "In SAMPLE EDIT (MIXER), SHIFT + PITCH = BUS A, START = BUS B, END = BUS EFFECT volume. Not saved."
+page = 115
+
+[[entry]]
+section = "s-shift"
+name = "Stop all samples"
+combo = "SHIFT + C (EXIT)"
+controls = ["shift", "k-c"]
+summary = "Stops every sample that is currently playing, including stuck loops."
+page = 115
+
+[[entry]]
+section = "s-shift"
+name = "Lo-Fi menu"
+combo = "SHIFT + LO-FI"
+controls = ["shift", "lofi"]
+summary = "LoFi: set Lo-Fi intensity. SmP.r: show the selected sample's sample rate."
+page = 13
+
+[[entry]]
+section = "s-shift"
+name = "Poly / mono"
+combo = "SHIFT + GATE"
+controls = ["shift", "gate"]
+summary = "Toggle polyphonic (PoLy, up to 16 voices of one sample) / monophonic (mono) for the selected pad."
+page = 18
+
+[[entry]]
+section = "s-shift"
+name = "Playback direction"
+combo = "SHIFT + LOOP"
+controls = ["shift", "loop"]
+summary = "Cycle FrWd (forward) → rvrS (reverse) → ALt (alternate, always loops)."
+page = 15
+
+[[entry]]
+section = "s-shift"
+name = "Step loop mode"
+combo = "SHIFT + PATTERN"
+controls = ["shift", "pattern"]
+summary = "While playing: hold step buttons to loop those steps. Press PATTERN to exit."
+page = 43
+
+[[entry]]
+section = "s-shift"
+name = "Shuffle"
+combo = "SHIFT + D (SHUFFLE)"
+controls = ["shift", "k-d"]
+summary = "Set swing -90–90. 0 = none, 10–16 is a nice shuffle. Exit with C (EXIT)."
+page = 62
+
+[[entry]]
+section = "s-shift"
+name = "Pattern length"
+combo = "SHIFT + D# (LAST)"
+controls = ["shift", "k-ds"]
+summary = "Set number of steps (up to 64). Exit with C (EXIT)."
+page = 63
+
+[[entry]]
+section = "s-shift"
+name = "Page ◀ / ▶"
+combo = "SHIFT + E / F"
+controls = ["shift", "k-e", "k-f"]
+summary = "Switch between 16-step pages 1–4."
+page = 51
+
+[[entry]]
+section = "s-shift"
+name = "Pitch envelope"
+combo = "SHIFT + F# (P.ENV)"
+controls = ["shift", "k-fs"]
+summary = "Open SAMPLE EDIT (P.ENV)."
+page = 95
+
+[[entry]]
+section = "s-shift"
+name = "Voice edit"
+combo = "SHIFT + G (VOICE)"
+controls = ["shift", "k-g"]
+summary = "Open SAMPLE EDIT (VOICE)."
+page = 103
+
+[[entry]]
+section = "s-shift"
+name = "Filter edit"
+combo = "SHIFT + G# (FILTER)"
+controls = ["shift", "k-gs"]
+summary = "Open SAMPLE EDIT (FILTER)."
+page = 107
+
+[[entry]]
+section = "s-shift"
+name = "Mixer edit"
+combo = "SHIFT + A (MIXER)"
+controls = ["shift", "k-a"]
+summary = "Open SAMPLE EDIT (MIXER)."
+page = 109
+
+[[entry]]
+section = "s-shift"
+name = "Delay/reverb settings"
+combo = "SHIFT + A# (DELAY/REVERB)"
+controls = ["shift", "k-as"]
+summary = "Open the send delay/reverb settings."
+page = 111
+
+[[entry]]
+section = "s-shift"
+name = "Write (save)"
+combo = "SHIFT + TIE (WRITE)"
+controls = ["shift", "tie"]
+summary = "Save pads, patterns or effects. Unsaved changes are lost at power off."
+page = 73
+
+[[entry]]
+section = "s-shift"
+name = "Clear motions"
+combo = "SHIFT + OCT- (MOTION)"
+controls = ["shift", "oct-down"]
+summary = "'CLr.m' blinks. ENTER clears all knob motions (whole pattern, or the current step in step edit). Turn one knob first to clear only that one."
+page = 48
+
+[[entry]]
+section = "s-shift"
+name = "System menu"
+combo = "SHIFT + OCT+ (MENU)"
+controls = ["shift", "oct-up"]
+summary = "Open the MENU parameter list."
+page = 90
+
+[[entry]]
+section = "s-shift"
+name = "Step sampling slices"
+combo = "SHIFT + turn PITCH (sampling mode)"
+controls = ["shift", "pitch", "sampling"]
+summary = "Set step sampling: S.OFF or S. 2–S. 64 slices."
+page = 26
+
+# ───────────────────────────── shortcuts: PATTERN ─────────────────────────────
+
+[[entry]]
+section = "s-pattern"
+name = "Select pad silently"
+combo = "PATTERN + pad 1–6"
+controls = ["pattern", "pads"]
+summary = "Select a pad without playing it, e.g. before step input."
+page = 116
+
+[[entry]]
+section = "s-pattern"
+name = "Select GRANULAR silently"
+combo = "PATTERN + GRANULAR"
+controls = ["pattern", "granular"]
+summary = "Select the GRANULAR pad without triggering it."
+page = 116
+
+[[entry]]
+section = "s-pattern"
+name = "Set granular source"
+combo = "PATTERN + GRANULAR + pad 1–6"
+controls = ["pattern", "granular", "pads"]
+summary = "Assign the pressed pad's sample as the granular sampler source."
+page = 34
+
+[[entry]]
+section = "s-pattern"
+name = "Metronome toggle"
+combo = "PATTERN + ●"
+controls = ["pattern", "rec"]
+summary = "Cycle metronome m.OFF / m.PLY (on during record and playback)."
+page = 116
+
+[[entry]]
+section = "s-pattern"
+name = "Effect grab (momentary FX)"
+combo = "PATTERN + LOOPER…MFX"
+controls = ["pattern", "looper", "pitch-fx", "delay", "filter", "scatter", "mfx"]
+summary = "The effect is on only while you hold its button."
+page = 71
+
+[[entry]]
+section = "s-pattern"
+name = "Show knob values"
+combo = "PATTERN + turn knob"
+controls = ["pattern", "ctrl1", "ctrl2", "ctrl3", "pitch", "start", "end", "level"]
+summary = "Shows the knob's current value. With SHIFT also held, shows the SHIFT-layer value. Doesn't apply to TEMPO/VALUE or VOLUME."
+page = 116
+
+[[entry]]
+section = "s-pattern"
+name = "Pattern Scale"
+combo = "PATTERN + turn TEMPO/VALUE"
+controls = ["pattern", "tempo"]
+summary = "Set step length: 1_8, 1_16, 1_32, 8t, 16t, 32t."
+page = 116
+
+[[entry]]
+section = "s-pattern"
+name = "Select pattern bank"
+combo = "PATTERN + step 1–4"
+controls = ["pattern", "steps"]
+summary = "Choose pattern bank 1–4, then release PATTERN and press step 1–16 for the pattern number."
+page = 41
+
+# ───────────────────────────── shortcuts: KYBD ─────────────────────────────
+
+[[entry]]
+section = "s-kybd"
+name = "Reload / Initialize"
+combo = "KYBD + OCT+ (● off)"
+controls = ["kybd", "oct-up"]
+summary = "Quick access to rL.Pt, rL.Gr, rL.Sq, rL.Pd, It.Pt, It.Sy, It.FX."
+page = 117
+
+[[entry]]
+section = "s-kybd"
+name = "Step copy / paste / insert / duplicate"
+combo = "KYBD + OCT+ (● on, step edit)"
+controls = ["kybd", "oct-up", "rec"]
+summary = "COPY, PStE, Insr, DUPL for the step being edited."
+page = 56
+
+[[entry]]
+section = "s-kybd"
+name = "Master probability"
+combo = "KYBD + turn TEMPO/VALUE"
+controls = ["kybd", "tempo"]
+summary = "-100–100 (default 0). Added to every note whose probability is 90 or less. Not saved."
+page = 117
+
+# ───────────────────────────── shortcuts: MFX ─────────────────────────────
+
+[[entry]]
+section = "s-mfx"
+name = "Select effect"
+combo = "MFX + step button"
+controls = ["mfx", "steps"]
+summary = "Pick one of the 20 MFX effects. MFX + TEMPO/VALUE also works."
+page = 118
+
+[[entry]]
+section = "s-mfx"
+name = "Pad → BUS A / EFFECT"
+combo = "MFX + pad 1–6"
+controls = ["mfx", "pads"]
+summary = "Toggle the pad's output between BUS A (dry, dim light) and BUS EFFECT (lit)."
+page = 72
+
+[[entry]]
+section = "s-mfx"
+name = "Pad → BUS B / EFFECT"
+combo = "MFX + DELAY + pad 1–6"
+controls = ["mfx", "delay", "pads"]
+summary = "Toggle the pad's output between BUS B (dry, dim blink) and BUS EFFECT."
+page = 72
+
+[[entry]]
+section = "s-mfx"
+name = "GRANULAR bus"
+combo = "MFX (+ DELAY) + GRANULAR"
+controls = ["mfx", "delay", "granular"]
+summary = "Without DELAY: BUS A ↔ EFFECT. With DELAY: BUS B ↔ EFFECT."
+page = 72
+
+[[entry]]
+section = "s-mfx"
+name = "External input bus"
+combo = "MFX (+ DELAY) + LO-FI"
+controls = ["mfx", "delay", "lofi"]
+summary = "Route MIX IN / mic audio. Without DELAY: BUS A ↔ EFFECT. With DELAY: BUS B ↔ EFFECT."
+page = 72
+
+[[entry]]
+section = "s-mfx"
+name = "USB input bus"
+combo = "MFX (+ DELAY) + GATE"
+controls = ["mfx", "delay", "gate"]
+summary = "Route USB audio input. Without DELAY: BUS A ↔ EFFECT. With DELAY: BUS B ↔ EFFECT."
+page = 72
+
+# ───────────────────────────── shortcuts: pads ─────────────────────────────
+
+[[entry]]
+section = "s-pad"
+name = "Per-pad play quantize"
+combo = "Hold pad + ●"
+controls = ["pads", "granular", "rec"]
+summary = "Toggle Play Quantize for that pad (disables its micro-timing)."
+page = 119
+
+[[entry]]
+section = "s-pad"
+name = "Hold (latch) pad"
+combo = "Hold pad + KYBD"
+controls = ["pads", "kybd"]
+summary = "Keep the pad held down. Only works when GATE is on."
+page = 119
+
+[[entry]]
+section = "s-pad"
+name = "Copy / swap sample"
+combo = "Hold pad + SHIFT + ▶ (COPY)"
+controls = ["pads", "shift", "play"]
+summary = "Choose COPY or EXCG, ENTER, pick the destination pad, ENTER. Sequence data is not swapped."
+page = 30
+
+# ───────────────────────────── shortcuts: steps ─────────────────────────────
+
+[[entry]]
+section = "s-step"
+name = "Step velocity"
+combo = "Hold step + pad"
+controls = ["steps", "pads"]
+summary = "Cycle StrG / mEdi / WEAK (100 / 75 / 50 % of Key Velocity). KYBD must be off."
+page = 120
+
+[[entry]]
+section = "s-step"
+name = "Tie"
+combo = "Hold step + KYBD"
+controls = ["steps", "kybd"]
+summary = "Tie the step into the next step. Fails if the next step already has a note. KYBD must be off."
+page = 52
+
+[[entry]]
+section = "s-step"
+name = "Step motion"
+combo = "Hold step + turn PITCH/START/END/LEVEL"
+controls = ["steps", "pitch", "start", "end", "level"]
+summary = "Record that knob value into the step (parameter lock)."
+page = 54
+
+[[entry]]
+section = "s-step"
+name = "Edit step data"
+combo = "Hold step + GRANULAR, turn TEMPO/VALUE"
+controls = ["steps", "granular", "tempo"]
+summary = "GRANULAR cycles note / velocity / probability / gate / micro-timing / sub step. Turn TEMPO/VALUE while holding the step to change the value."
+page = 60
+
+# ───────────────────────────── shortcuts: power-on ─────────────────────────────
+
+[[entry]]
+section = "s-power"
+name = "Pattern backup"
+combo = "Hold ▶ + power on"
+controls = ["play", "power"]
+summary = "Mounts the 'P-6' drive; patterns appear in BACKUP as P6_PTN1-01.PRM … P6_PTN4-16.PRM."
+page = 81
+
+[[entry]]
+section = "s-power"
+name = "Pattern restore"
+combo = "Hold ● + power on"
+controls = ["rec", "power"]
+summary = "Copy .PRM files into RESTORE, eject, press KYBD."
+page = 82
+
+[[entry]]
+section = "s-power"
+name = "Sample export"
+combo = "Hold BANK buttons (+ SAMPLING for E–H) + power on"
+controls = ["bank", "sampling", "power"]
+summary = "Exports WAV and PRM files per pad into EXPORT/BANK_x/PAD_n."
+page = 83
+
+[[entry]]
+section = "s-power"
+name = "Sample import"
+combo = "Hold SAMPLING + power on"
+controls = ["sampling", "power"]
+summary = "Put WAVs in IMPORT/BANK_x/PAD_n, eject, press KYBD."
+page = 85
+
+[[entry]]
+section = "s-power"
+name = "Factory reset"
+combo = "Hold KYBD + power on"
+controls = ["kybd", "power", "granular"]
+summary = "'FACt' + blinking GRANULAR. Press GRANULAR to erase everything, or power off to cancel."
+page = 88
+
+[[entry]]
+section = "s-power"
+name = "Battery-only mode"
+combo = "Hold C (EXIT) + power on"
+controls = ["k-c", "power"]
+summary = "Runs on battery without drawing power over USB, e.g. from an iPhone/iPad or MX-1 (non HOST 3 port)."
+page = 77
+
+# ───────────────────────────── MENU ─────────────────────────────
+
+[[entry]]
+section = "m-menu"
+name = "Volume"
+display = "vOL"
+summary = "Pattern volume. Saved per pattern."
+values = [["0–200", ""]]
+page = 90
+
+[[entry]]
+section = "m-menu"
+name = "Transpose"
+display = "trAn"
+summary = "Transposes the sound generator. Saved per pattern."
+values = [["-60–60", "semitones"]]
+page = 90
+
+[[entry]]
+section = "m-menu"
+name = "Pattern Scale"
+display = "P.SCL"
+summary = "Length of one step. Saved per pattern. Shortcut: PATTERN + turn TEMPO/VALUE."
+values = [
+  ["1_8", "8th note"], ["1_16", "16th note"], ["1_32", "32nd note"],
+  ["8t", "8th triplet"], ["16t", "16th triplet"], ["32t", "32nd triplet"],
+]
+page = 90
+
+[[entry]]
+section = "m-menu"
+name = "Play Quantize"
+display = "P.qnt"
+summary = "Per-pad quantize on playback. Saved per pattern. Quantized pads ignore micro-timing."
+values = [
+  ["ALL", "ENTER, choose On/Off, ENTER: applies to every pad"],
+  ["A-1 … H-6, Grnu", "Choose one pad (or Granular), ENTER, On/Off"],
+]
+page = 91
+
+[[entry]]
+section = "m-menu"
+name = "Quantize Timing"
+display = "qnt.t"
+summary = "Threshold for snapping to the current vs next step. 50 %: notes at or after half a step go to the next step. Higher keeps more notes on the current step."
+values = [["50–99 %", ""]]
+page = 92
+
+[[entry]]
+section = "m-menu"
+name = "Stop Behavior"
+display = "StoP"
+summary = "What happens to playing samples when the sequencer stops or the pattern changes."
+values = [["rEmn", "Remain: keep playing"], ["Cut", "Stop"]]
+page = 92
+
+[[entry]]
+section = "m-menu"
+name = "Sync Clock"
+display = "S.cLk"
+summary = "Sync pulses per beat (SYNC IN/OUT)."
+values = [["1, 2, 3, 4, 6, 8, 12, 24", "pulses per beat"]]
+page = 92
+
+[[entry]]
+section = "m-menu"
+name = "Sampler MIDI Channel"
+display = "S.CH"
+summary = "MIDI channel for the sample pads. Notes 48–95 trigger A-1 … H-6. Default 11."
+values = [["1–16", ""]]
+page = 92
+
+[[entry]]
+section = "m-menu"
+name = "Granular MIDI Channel"
+display = "G.CH"
+summary = "MIDI channel for the GRANULAR pad. Default 5."
+values = [["1–16", ""]]
+page = 92
+
+[[entry]]
+section = "m-menu"
+name = "Auto MIDI Channel"
+display = "A.CH"
+summary = "Receive channel that plays the currently selected pad chromatically and receives CCs. Default 15."
+values = [["1–16", ""]]
+page = 93
+
+[[entry]]
+section = "m-menu"
+name = "MIDI Clock Sync"
+display = "SYnC"
+summary = "Which clock to follow. SYNC IN always wins when connected."
+values = [["AUtO", "Accept any incoming clock"], ["Int", "Internal"], ["mIdI", "MIDI IN only"], ["USb", "USB MIDI only"]]
+page = 93
+
+[[entry]]
+section = "m-menu"
+name = "MIDI Thru"
+display = "thrU"
+summary = "Echo MIDI IN to MIDI OUT."
+values = [["OFF / On", ""]]
+page = 93
+
+[[entry]]
+section = "m-menu"
+name = "Tx Program Change"
+display = "txPc"
+summary = "Send program change when the pattern changes."
+values = [["OFF / On", ""]]
+page = 93
+
+[[entry]]
+section = "m-menu"
+name = "Rx Program Change"
+display = "rxPc"
+summary = "Change pattern when a program change (0–63) is received."
+values = [["OFF / On", ""]]
+page = 93
+
+[[entry]]
+section = "m-menu"
+name = "Program Change Channel"
+display = "Pc.Ch"
+summary = "Channel for pattern program changes. Default 16."
+values = [["1–16", ""]]
+page = 93
+
+[[entry]]
+section = "m-menu"
+name = "Key Velocity"
+display = "vELo"
+summary = "Velocity produced by the pads and keyboard buttons."
+values = [["1–127", ""]]
+page = 93
+
+[[entry]]
+section = "m-menu"
+name = "Velocity Curve"
+display = "v.Crv"
+summary = "How volume responds to velocity."
+values = [["LInr", "Linear"], ["Exp", "Exponential"]]
+page = 93
+
+[[entry]]
+section = "m-menu"
+name = "Tune"
+display = "tUnE"
+summary = "Master tuning."
+values = [["433.0–448.0 Hz", "default 440.0"]]
+page = 93
+
+[[entry]]
+section = "m-menu"
+name = "Ext. In Bus Select"
+display = "In.b"
+summary = "Bus for external input (built-in mic, headset mic, MIX IN)."
+values = [["bUS.A", "BUS A (dry)"], ["bUS.b", "BUS B (dry)"], ["EFCt", "BUS EFFECT"]]
+page = 93
+
+[[entry]]
+section = "m-menu"
+name = "Ext. In Gain"
+display = "In.G"
+summary = "Gain for external input. Use if MIX IN distorts without the 0 dB meter lighting."
+values = [["0–18 dB", ""]]
+page = 93
+
+[[entry]]
+section = "m-menu"
+name = "USB In Bus Select"
+display = "USb.b"
+summary = "Bus for audio coming in over USB."
+values = [["bUS.A", "BUS A"], ["bUS.b", "BUS B"], ["EFCt", "BUS EFFECT"]]
+page = 93
+
+[[entry]]
+section = "m-menu"
+name = "USB In Gain"
+display = "USb.G"
+summary = "Gain for USB audio input."
+values = [["0–18 dB", ""]]
+page = 93
+
+[[entry]]
+section = "m-menu"
+name = "Mix Out Gain"
+display = "Out.G"
+summary = "MIX OUT jack gain."
+values = [["-18–0 dB", ""]]
+page = 93
+
+[[entry]]
+section = "m-menu"
+name = "USB Direct Out"
+display = "USb.d"
+summary = "USB output volume."
+values = [["OFF", "Follows the VOLUME knob"], ["1–127", "Fixed, independent of VOLUME"]]
+page = 93
+
+[[entry]]
+section = "m-menu"
+name = "AIRA Link"
+display = "A.LnK"
+summary = "On only for AIRA LINK hosts like the MX-1. OFF for computers and phones. Takes effect after a power cycle."
+values = [["OFF / On", ""]]
+page = 94
+
+[[entry]]
+section = "m-menu"
+name = "Count In"
+display = "Cnt.I"
+summary = "Count-in length before recording."
+values = [["OFF, 2–4", "beats"]]
+page = 94
+
+[[entry]]
+section = "m-menu"
+name = "Metronome"
+display = "mtro"
+summary = "When the metronome sounds. Quick toggle: PATTERN + ●."
+values = [["OFF", "Never"], ["rEC", "While recording"], ["rC.PL", "Recording and playback"]]
+page = 94
+
+[[entry]]
+section = "m-menu"
+name = "Metronome Level"
+display = "mtr.L"
+summary = "Metronome volume."
+values = [["0–100", ""]]
+page = 94
+
+[[entry]]
+section = "m-menu"
+name = "Dimmer"
+display = "dimr"
+summary = "Whether 'off' buttons (SHIFT, PATTERN, the six effect buttons, KYBD) glow dimly. Firmware 1.02+."
+values = [["OFF", "Dark"], ["On", "Dim glow"]]
+page = 94
+
+[[entry]]
+section = "m-menu"
+name = "Reload Pattern"
+display = "rL.Pt"
+summary = "Revert the current pattern to its last saved state (sequence, volume, transpose, scale, mutes, quantize, granular sound, tempo, delay/reverb). ENTER to execute."
+page = 94
+
+[[entry]]
+section = "m-menu"
+name = "Reload Granular"
+display = "rL.Gr"
+summary = "Revert the GRANULAR pad settings to the last save. ENTER to execute."
+page = 94
+
+[[entry]]
+section = "m-menu"
+name = "Reload Sequencer"
+display = "rL.Sq"
+summary = "Revert only the sequence data of the current pattern. ENTER to execute."
+page = 94
+
+[[entry]]
+section = "m-menu"
+name = "Reload Pad"
+display = "rL.Pd"
+summary = "Revert the selected pad (LO-FI, GATE, poly, LOOP, direction, P.ENV, VOICE, FILTER, MIXER). ENTER to execute."
+page = 94
+
+[[entry]]
+section = "m-menu"
+name = "Initialize Pattern"
+display = "It.Pt"
+summary = "Clear the selected pattern. ENTER to execute."
+page = 94
+
+[[entry]]
+section = "m-menu"
+name = "Initialize System"
+display = "It.Sy"
+summary = "Reset system settings (not the per-pattern ones). ENTER to execute."
+page = 94
+
+[[entry]]
+section = "m-menu"
+name = "Initialize Effects"
+display = "It.FX"
+summary = "Reset all effect parameters. ENTER to execute."
+page = 94
+
+# ───────────────────────────── P.ENV ─────────────────────────────
+
+[[entry]]
+section = "m-penv"
+name = "P.Env Mode"
+display = "P.Env"
+summary = "Pitch envelope shape. Sample pads only (not GRANULAR)."
+values = [
+  ["ADSR", "Classic attack-decay-sustain-release"],
+  ["ADR", "Runs A→D→R without waiting for release"],
+  ["ADA.C", "Cyclic A→D→A→… while held"],
+]
+page = 95
+
+[[entry]]
+section = "m-penv"
+name = "P.Env Attack"
+display = "P.Atk"
+combo = "PITCH knob (in P.ENV)"
+controls = ["pitch", "k-fs"]
+values = [["0–255", "0–10 s"]]
+summary = "Attack time."
+page = 95
+
+[[entry]]
+section = "m-penv"
+name = "P.Env Decay"
+display = "P.dCy"
+combo = "START knob (in P.ENV)"
+controls = ["start", "k-fs"]
+values = [["0–255", "0–10 s"]]
+summary = "Decay time."
+page = 95
+
+[[entry]]
+section = "m-penv"
+name = "P.Env Sustain"
+display = "P.SUS"
+combo = "END knob (in P.ENV)"
+controls = ["end", "k-fs"]
+values = [["0–255", ""]]
+summary = "Sustain level. The envelope adapts so the sustain level stays at the original pitch."
+page = 95
+
+[[entry]]
+section = "m-penv"
+name = "P.Env Release"
+display = "P.rEL"
+combo = "LEVEL knob (in P.ENV)"
+controls = ["level", "k-fs"]
+values = [["0–255", "0–10 s"]]
+summary = "Release time."
+page = 95
+
+[[entry]]
+section = "m-penv"
+name = "P.Env Time Key Follow"
+display = "t.Ky.F"
+combo = "CTRL1 (in P.ENV)"
+controls = ["ctrl1", "k-fs"]
+values = [["0–255", ""]]
+summary = "Higher values make envelope times shorter on higher keys."
+page = 96
+
+[[entry]]
+section = "m-penv"
+name = "P.Env Velocity Sens"
+display = "vEL.S"
+combo = "CTRL2 (in P.ENV)"
+controls = ["ctrl2", "k-fs"]
+values = [["0–255", ""]]
+summary = "Higher values make the pitch change follow velocity more."
+page = 96
+
+[[entry]]
+section = "m-penv"
+name = "P.Env Envelope Depth"
+display = "Ev.dP"
+combo = "CTRL3 (in P.ENV)"
+controls = ["ctrl3", "k-fs"]
+values = [["-100–100", "+ rises, - falls (100 ≈ +1 octave)"]]
+summary = "Maximum pitch change of the envelope."
+page = 96
+
+# ───────────────────────────── VOICE ─────────────────────────────
+
+[[entry]]
+section = "m-voice"
+name = "Sample (granular source)"
+display = "SmPL"
+summary = "Sample assigned to the GRANULAR pad. Stereo sources use L only. GRANULAR only."
+values = [["A-1 … H-6", ""]]
+page = 103
+
+[[entry]]
+section = "m-voice"
+name = "Coarse Tune"
+display = "C.tUn"
+combo = "PITCH knob (top screen)"
+controls = ["pitch"]
+values = [["-24–24", "semitones"]]
+summary = "Pitch in semitones."
+page = 103
+
+[[entry]]
+section = "m-voice"
+name = "Fine Tune"
+display = "F.tUn"
+values = [["-100–100", "cents"]]
+summary = "Pitch in cents."
+page = 103
+
+[[entry]]
+section = "m-voice"
+name = "Detune"
+display = "dEtU"
+values = [["0–100", ""]]
+summary = "Random pitch variation per note (per grain on GRANULAR)."
+page = 103
+
+[[entry]]
+section = "m-voice"
+name = "Head Position"
+display = "h.PoS"
+combo = "START knob (top screen, GRANULAR)"
+controls = ["start", "granular"]
+values = [["0.000 – sample end (s)", "SHIFT + turn for larger steps"]]
+summary = "Where grains are taken from. GRANULAR only."
+page = 103
+
+[[entry]]
+section = "m-voice"
+name = "Head Speed"
+display = "h.SPd"
+values = [["-4.00–4.00", "+ forward, - reverse, wraps to Head Position"]]
+summary = "How fast the playhead moves through the sample. GRANULAR only."
+page = 103
+
+[[entry]]
+section = "m-voice"
+name = "Spread"
+display = "SPrd"
+combo = "CTRL1 (VOICE, GRANULAR)"
+controls = ["ctrl1", "granular"]
+values = [["0–100", ""]]
+summary = "Random scatter of grain start positions around the head. GRANULAR only."
+page = 104
+
+[[entry]]
+section = "m-voice"
+name = "Grains"
+display = "GrnS"
+combo = "CTRL2 (VOICE, GRANULAR)"
+controls = ["ctrl2", "granular"]
+values = [["0.5–8.0", ""]]
+summary = "Grain density. GRANULAR only."
+page = 104
+
+[[entry]]
+section = "m-voice"
+name = "Grain Shape"
+display = "G.ShP"
+combo = "CTRL3 (VOICE, GRANULAR)"
+controls = ["ctrl3", "granular"]
+values = [["OFF", "Square (no fade)"], ["1–49", "Fade out"], ["50", "Half in, half out"], ["51–100", "Fade in"]]
+summary = "Grain volume envelope. GRANULAR only."
+page = 104
+
+[[entry]]
+section = "m-voice"
+name = "Grain Size"
+display = "G.SiZ"
+combo = "END knob (top screen, GRANULAR)"
+controls = ["end", "granular"]
+values = [["0.000– (s)", ""]]
+summary = "Grain length. Affected by tuning and Grain Time Key Follow. GRANULAR only."
+page = 104
+
+[[entry]]
+section = "m-voice"
+name = "Grain Reverse Probability"
+display = "G.rvS"
+values = [["0–100", ""]]
+summary = "Chance a grain plays backwards. GRANULAR only."
+page = 104
+
+[[entry]]
+section = "m-voice"
+name = "Grain Timing Jitter"
+display = "G.Tm.J"
+values = [["0–100", ""]]
+summary = "Randomizes when grains spawn. GRANULAR only."
+page = 104
+
+[[entry]]
+section = "m-voice"
+name = "Grain Time Key Follow"
+display = "G.Ky.F"
+values = [["0–255", "0 = loop cycles line up across chord notes"]]
+summary = "How grain size tracks the played key. GRANULAR only."
+page = 104
+
+[[entry]]
+section = "m-voice"
+name = "Start Mode"
+display = "St.md"
+values = [["CoLd", "Grains build up gradually"], ["hot", "All grains start at once"]]
+summary = "Most noticeable with high Grains values. GRANULAR only."
+page = 104
+
+[[entry]]
+section = "m-voice"
+name = "Chop"
+display = "ChoP"
+values = [["OFF, 2–64", "slices, mapped to notes C4 upward"]]
+summary = "Split the sample into equal slices played from the keyboard. Sample pads only."
+page = 104
+
+[[entry]]
+section = "m-voice"
+name = "Start Position"
+display = "S.PoS"
+combo = "START knob (top screen)"
+controls = ["start"]
+values = [["0.000 – sample end (s)", "SHIFT + turn for larger steps"]]
+summary = "Playback start. Sample pads only."
+page = 104
+
+[[entry]]
+section = "m-voice"
+name = "Size"
+display = "SiZE"
+combo = "END knob (top screen)"
+controls = ["end"]
+values = [["0.000– (s)", ""]]
+summary = "Playback length from Start Position. The knob moves Size and Loop Size together. Sample pads only."
+page = 104
+
+[[entry]]
+section = "m-voice"
+name = "Loop Size"
+display = "LP.SZ"
+combo = "END knob (top screen)"
+controls = ["end"]
+values = [["0.000– (s)", ""]]
+summary = "Length of the looped portion at the end of Size. Sample pads only."
+page = 105
+
+[[entry]]
+section = "m-voice"
+name = "T.Env Mode"
+display = "t.Env"
+values = [["ADSR", "Classic"], ["ADR", "No wait for release"], ["ADA.C", "Cyclic while held"]]
+summary = "Amp/filter envelope shape (the filter uses it via Filter Envelope Depth)."
+page = 105
+
+[[entry]]
+section = "m-voice"
+name = "T.Env Attack / Decay / Sustain / Release"
+display = "t.Atk / t.dCy / t.SUS / t.rEL"
+combo = "PITCH / START / END / LEVEL (in VOICE)"
+controls = ["pitch", "start", "end", "level", "k-g"]
+values = [["0–255", "A, D, R: 0–10 s"]]
+summary = "Amp envelope (needs Amp Switch on). Also drives the filter envelope."
+page = 105
+
+[[entry]]
+section = "m-voice"
+name = "T.Env Time Key Follow"
+display = "t.Ky.F"
+values = [["0–255", ""]]
+summary = "Envelope times get shorter on higher keys."
+page = 105
+
+[[entry]]
+section = "m-voice"
+name = "Amp Switch"
+display = "tvA"
+values = [["Off / On", ""]]
+summary = "When On, the volume follows the T.Env."
+page = 105
+
+[[entry]]
+section = "m-voice"
+name = "Mute Group"
+display = "mU.Gr"
+values = [["Off, 1–128", ""]]
+summary = "Pads in the same group cut each other off (e.g. open/closed hats). Sample pads only."
+page = 105
+
+# ───────────────────────────── FILTER ─────────────────────────────
+
+[[entry]]
+section = "m-filter"
+name = "Filter Type"
+display = "TyPE"
+combo = "PITCH knob (in FILTER)"
+controls = ["pitch", "k-gs"]
+values = [["OFF", ""], ["LPF", "Low pass"], ["BPF", "Band pass"], ["hPF", "High pass"], ["PKG", "Peaking (boost a band)"]]
+summary = "Per-pad filter type."
+page = 107
+
+[[entry]]
+section = "m-filter"
+name = "Filter Cutoff Frequency"
+display = "CUt.F"
+combo = "START knob (in FILTER)"
+controls = ["start", "k-gs"]
+values = [["0–255", ""]]
+summary = "Cutoff."
+page = 107
+
+[[entry]]
+section = "m-filter"
+name = "Filter Resonance"
+display = "rESO"
+combo = "END knob (in FILTER)"
+controls = ["end", "k-gs"]
+values = [["0–255", ""]]
+summary = "Resonance."
+page = 107
+
+[[entry]]
+section = "m-filter"
+name = "Filter Cutoff Key Follow"
+display = "C.Ky.F"
+combo = "CTRL1 (in FILTER)"
+controls = ["ctrl1", "k-gs"]
+values = [["0–255", ""]]
+summary = "Higher keys open the cutoff more."
+page = 107
+
+[[entry]]
+section = "m-filter"
+name = "Filter Velocity Sens"
+display = "vEL.S"
+combo = "CTRL2 (in FILTER)"
+controls = ["ctrl2", "k-gs"]
+values = [["0–255", ""]]
+summary = "Harder hits open the cutoff more. Lower Cutoff when you raise this."
+page = 108
+
+[[entry]]
+section = "m-filter"
+name = "Filter Envelope Depth"
+display = "Ev.dP"
+combo = "LEVEL knob (in FILTER)"
+controls = ["level", "k-gs"]
+values = [["0–255", "0 = no envelope"]]
+summary = "How far the T.Env (set in VOICE) sweeps the cutoff."
+page = 108
+
+# ───────────────────────────── MIXER ─────────────────────────────
+
+[[entry]]
+section = "m-mixer"
+name = "Level"
+display = "LEvL"
+combo = "LEVEL knob"
+controls = ["level", "k-a"]
+values = [["0–127", "100 = 0 dB, 127 = +12 dB"]]
+summary = "Pad volume."
+page = 109
+
+[[entry]]
+section = "m-mixer"
+name = "Level Jitter"
+display = "LEv.J"
+values = [["0–100", ""]]
+summary = "Random volume per grain. GRANULAR only."
+page = 109
+
+[[entry]]
+section = "m-mixer"
+name = "Auto Pan"
+display = "A.PAn"
+values = [["OFF", "Fixed pan"], ["ALt", "Alternate L/R per note (GRANULAR)"], ["SWng", "Swing L→R→L (GRANULAR)"], ["rnd", "Random per note"]]
+summary = "Automatic pan movement per note."
+page = 109
+
+[[entry]]
+section = "m-mixer"
+name = "Pan"
+display = "PAn"
+combo = "PITCH knob (in MIXER)"
+controls = ["pitch", "k-a"]
+values = [["L64 – C – r63", "Only when Auto Pan is OFF"]]
+summary = "Stereo position."
+page = 109
+
+[[entry]]
+section = "m-mixer"
+name = "Output Bus Select"
+display = "OUt.b"
+values = [["bUS.A", "BUS A (dry)"], ["bUS.b", "BUS B (dry)"], ["EFCt", "BUS EFFECT"]]
+summary = "Output bus for the pad. Also MFX (+ DELAY) + pad."
+page = 110
+
+[[entry]]
+section = "m-mixer"
+name = "Send Delay"
+display = "Snd.d"
+combo = "START knob (in MIXER)"
+controls = ["start", "k-a"]
+values = [["0–255", ""]]
+summary = "Send to the delay send effect."
+page = 110
+
+[[entry]]
+section = "m-mixer"
+name = "Send Reverb"
+display = "Snd.r"
+combo = "END knob (in MIXER)"
+controls = ["end", "k-a"]
+values = [["0–255", ""]]
+summary = "Send to the reverb send effect."
+page = 110
+
+# ───────────────────────────── DELAY/REVERB ─────────────────────────────
+
+[[entry]]
+section = "m-dlyrev"
+name = "Delay Sync"
+display = "d.Syn"
+values = [["Off / On", ""]]
+summary = "Tempo-sync the send delay."
+page = 111
+
+[[entry]]
+section = "m-dlyrev"
+name = "Delay Time"
+display = "d.tim"
+combo = "PITCH knob (in DELAY/REVERB)"
+controls = ["pitch", "k-as"]
+values = [["1–740 ms", "Sync Off"], ["128 … 1_4", "Sync On: note values (t = triplet, d = dotted)"]]
+summary = "Delay time."
+page = 111
+
+[[entry]]
+section = "m-dlyrev"
+name = "Delay Level"
+display = "d.LEv"
+combo = "START knob (in DELAY/REVERB)"
+controls = ["start", "k-as"]
+values = [["0–255", ""]]
+summary = "Delay volume."
+page = 111
+
+[[entry]]
+section = "m-dlyrev"
+name = "Feedback"
+display = "d.Fbk"
+values = [["0–255", ""]]
+summary = "Number of repeats."
+page = 111
+
+[[entry]]
+section = "m-dlyrev"
+name = "Feedback Mode"
+display = "d.F.md"
+values = [["norm", "Normal"], ["Cr.Lr", "Ping-pong starting L→R"], ["Cr.rL", "Ping-pong starting R→L"]]
+summary = "Stereo behaviour of repeats."
+page = 111
+
+[[entry]]
+section = "m-dlyrev"
+name = "Delay Low / High Cut"
+display = "d.L.Ct / d.H.Ct"
+values = [["FLAt–800 Hz", "Low cut"], ["630–FLAt Hz", "High cut"]]
+summary = "EQ on the delay."
+page = 111
+
+[[entry]]
+section = "m-dlyrev"
+name = "Delay Level Mode"
+display = "d.L.md"
+values = [["PrE", "START controls input: tails fade naturally"], ["PoSt", "START controls output: instant mute"]]
+summary = "What the START knob controls."
+page = 112
+
+[[entry]]
+section = "m-dlyrev"
+name = "Delay to Reverb Send"
+display = "d.to.r"
+values = [["0–255", ""]]
+summary = "Feed the delay into the reverb."
+page = 112
+
+[[entry]]
+section = "m-dlyrev"
+name = "Reverb Type"
+display = "r.tyP"
+values = [["Amb", "Ambience"], ["room", "Room"], ["hAL1", "Hall 1 (clear, spacious)"], ["hAL2", "Hall 2 (milder)"], ["PLAt", "Plate"], ["mod", "Modulated hall"]]
+summary = "Reverb algorithm."
+page = 112
+
+[[entry]]
+section = "m-dlyrev"
+name = "Reverb Time"
+display = "r.tim"
+combo = "END knob (in DELAY/REVERB)"
+controls = ["end", "k-as"]
+values = [["0–255", ""]]
+summary = "Reverb length."
+page = 112
+
+[[entry]]
+section = "m-dlyrev"
+name = "Reverb Level"
+display = "r.LEv"
+combo = "LEVEL knob (in DELAY/REVERB)"
+controls = ["level", "k-as"]
+values = [["0–255", ""]]
+summary = "Reverb volume."
+page = 112
+
+[[entry]]
+section = "m-dlyrev"
+name = "Reverb Pre Delay / Low / High Cut / Density"
+display = "r.P.dL / d.L.Ct / d.H.Ct / r.dnS"
+values = [["0–100 ms", "Pre delay"], ["FLAt–800 Hz", "Low cut"], ["630–FLAt Hz", "High cut"], ["0–10", "Density"]]
+summary = "Further reverb shaping."
+page = 112
+
+[[entry]]
+section = "m-dlyrev"
+name = "Global Delay/Reverb SW"
+display = "GL.d.r"
+values = [["Off", "Per pattern; tails cut when switching pattern"], ["On", "System-wide; tails carry across pattern changes"]]
+summary = "Whether delay/reverb settings live in the pattern or the system."
+page = 113
+
+# ───────────────────────────── WRITE ─────────────────────────────
+
+[[entry]]
+section = "m-write"
+name = "WRITE targets"
+combo = "SHIFT + TIE (WRITE) → choose → C# (ENTER)"
+controls = ["shift", "tie", "k-cs"]
+summary = "Save to memory. C (EXIT) cancels. Anything unsaved reverts at power off."
+values = [
+  ["ALL", "All pads and all patterns"],
+  ["PAd", "Selected pad's parameters"],
+  ["Pd.AL", "All pads' parameters"],
+  ["Ptn", "Current pattern"],
+  ["Pt.AL", "All patterns"],
+  ["EFCt", "All effect parameters (including MFX choices)"],
+]
+page = 73
+
+# ───────────────────────────── COPY ─────────────────────────────
+
+[[entry]]
+section = "m-copy"
+name = "Copy pattern"
+display = "Ptn"
+combo = "SHIFT + ▶ → Ptn → ENTER → choose destination → ENTER"
+controls = ["shift", "play", "k-cs"]
+summary = "Copy the current pattern to another slot."
+page = 64
+
+[[entry]]
+section = "m-copy"
+name = "Duplicate (double length)"
+display = "dUPL"
+combo = "SHIFT + ▶ → dUPL → ENTER"
+controls = ["shift", "play", "k-cs"]
+summary = "Appends a copy of all steps, doubling the length. Same as step-edit DUPL."
+page = 65
+
+[[entry]]
+section = "m-copy"
+name = "Copy one pad's sequence"
+display = "PArt"
+combo = "pad → SHIFT + ▶ → PArt → ENTER … dest pad → ENTER"
+controls = ["shift", "play", "pads", "granular", "k-cs"]
+summary = "Copy a single pad's sequence to another pad, optionally in another pattern."
+steps = [
+  "Select the source pattern and press the source pad (or GRANULAR).",
+  "SHIFT + ▶, choose PArt, ENTER. 'COPY' blinks and ENTER blinks rapidly.",
+  "(Other pattern) Press PATTERN, choose the destination with TEMPO/VALUE, then SHIFT + ▶.",
+  "Press the destination pad.",
+  "ENTER: 'PStE' and it's pasted. Temporary memory is cleared.",
+]
+notes = ["SHIFT + ENTER clears the copied sequence ('CLr')."]
+page = 66
+
+[[entry]]
+section = "m-copy"
+name = "Copy / swap sample"
+display = "COPY / EXCG"
+combo = "Hold pad + SHIFT + ▶ → COPY or EXCG → ENTER → dest pad → ENTER"
+controls = ["pads", "shift", "play", "k-cs"]
+summary = "COPY needs an empty (blinking) destination. EXCG needs a non-empty one."
+page = 30
+
+# ───────────────────────────── step tools ─────────────────────────────
+
+[[entry]]
+section = "m-stepedit"
+name = "Copy step"
+display = "COPY"
+combo = "● → pick step → KYBD + OCT+ → COPY → ENTER"
+controls = ["rec", "kybd", "oct-up", "k-cs"]
+summary = "Copy the current step to temporary memory ('donE')."
+page = 56
+
+[[entry]]
+section = "m-stepedit"
+name = "Paste step"
+display = "PStE"
+combo = "● → pick step → KYBD + OCT+ → PStE → ENTER"
+controls = ["rec", "kybd", "oct-up", "k-cs"]
+summary = "Overwrite the current step with the copied one."
+page = 57
+
+[[entry]]
+section = "m-stepedit"
+name = "Insert empty step"
+display = "Insr"
+combo = "● → pick step → KYBD + OCT+ → Insr → ENTER"
+controls = ["rec", "kybd", "oct-up", "k-cs"]
+summary = "Insert a blank step. Later steps shift and LAST grows by 1. Not possible when LAST is 64."
+page = 58
+
+[[entry]]
+section = "m-stepedit"
+name = "Duplicate all steps"
+display = "DUPL"
+combo = "● → KYBD + OCT+ → DUPL → ENTER"
+controls = ["rec", "kybd", "oct-up", "k-cs"]
+summary = "Append a copy of all steps, doubling the length."
+page = 59
+
+# ───────────────────────────── step data ─────────────────────────────
+
+[[entry]]
+section = "m-stepdata"
+name = "Note number"
+display = "n.C4"
+values = [["C-1 – G9", "Chords show the lowest note; editing moves all notes"]]
+summary = "Pitch of the step."
+page = 60
+
+[[entry]]
+section = "m-stepdata"
+name = "Velocity"
+display = "v.100"
+values = [["1–127", "Chords show the highest; editing sets all"]]
+summary = "Step velocity. Quick set: hold step + pad (StrG / mEdi / WEAK)."
+page = 60
+
+[[entry]]
+section = "m-stepdata"
+name = "Probability"
+display = "P.100"
+values = [
+  ["P. 0–P.100", "% chance to play"],
+  ["P.1st", "Only the first time through"],
+  ["P. n1", "Every time except the first"],
+  ["P.1_2 … P.8_8", "Play only on the n-th of m loops (P.2_4 = 2nd of every 4)"],
+]
+summary = "Conditional trigs. Applies to the whole step, or to the selected note when ● and KYBD are lit."
+page = 61
+
+[[entry]]
+section = "m-stepdata"
+name = "Gate time"
+display = "G.100"
+values = [["G. 0–G.150", "Gate + micro-timing ≥ 100 into the same note = tie"]]
+summary = "Note length."
+page = 61
+
+[[entry]]
+section = "m-stepdata"
+name = "Micro-timing"
+display = "t.  0"
+values = [["t.-50 – t. 99 %", "- early, + late"]]
+summary = "Nudge the note off-grid. Ignored when Play Quantize is on."
+page = 61
+
+[[entry]]
+section = "m-stepdata"
+name = "Sub step"
+display = "ooo_"
+summary = "Ratchets: split the step and choose which parts play (e.g. 3 parts, first two play). Only affects steps with notes, not mid-tie steps."
+page = 61
+
+# ───────────────────────────── Lo-Fi ─────────────────────────────
+
+[[entry]]
+section = "m-lofi"
+name = "Lo-Fi intensity"
+display = "LoFi"
+combo = "SHIFT + LO-FI → LoFi → ENTER → turn → EXIT"
+controls = ["shift", "lofi", "k-cs", "k-c"]
+summary = "How much the Lo-Fi button degrades the sound."
+page = 13
+
+[[entry]]
+section = "m-lofi"
+name = "Show sample rate"
+display = "SmP.r"
+combo = "SHIFT + LO-FI → SmP.r → ENTER"
+controls = ["shift", "lofi", "k-cs"]
+summary = "Display the selected sample's sample rate. EXIT to leave."
+page = 13
+
+# ───────────────────────────── sampling mode ─────────────────────────────
+
+[[entry]]
+section = "m-sampling"
+name = "Sample rate"
+combo = "LO-FI (in sampling mode)"
+controls = ["lofi", "sampling"]
+values = [["44.1k", "LO-FI dim"], ["22.0k", "LO-FI lit"], ["14.7k", "LO-FI fast blink"], ["11.0k", "LO-FI blink"]]
+summary = "Recording sample rate. Lower rates mean more time and a crunchier sound."
+page = 25
+
+[[entry]]
+section = "m-sampling"
+name = "Mic mute"
+combo = "DELETE (in sampling mode)"
+controls = ["delete", "sampling"]
+values = [["Lit", "Mic muted"], ["Dim", "Mic on"]]
+summary = "Mute the built-in/headset mic, e.g. when sampling only MIX IN or USB."
+page = 25
+
+[[entry]]
+section = "m-sampling"
+name = "Mono / stereo"
+combo = "PITCH knob (in sampling mode)"
+controls = ["pitch", "sampling"]
+values = [["mono", ""], ["StEr", ""]]
+summary = "Channel count."
+page = 25
+
+[[entry]]
+section = "m-sampling"
+name = "Sample length"
+combo = "START knob (in sampling mode)"
+controls = ["start", "sampling"]
+values = [["FREE", "Until you press SAMPLING"], ["m.1/4, m.2/4, m.3/4", "Beats of a bar"], ["m. 1 – m. 29", "Bars (max depends on tempo/rate/mono)"]]
+summary = "Recording length."
+page = 26
+
+[[entry]]
+section = "m-sampling"
+name = "Start trigger"
+combo = "END knob (in sampling mode)"
+controls = ["end", "sampling"]
+values = [["t.OFF", "Starts when you press SAMPLING"], ["SynC", "SAMPLING or ▶, or MIDI start/stop (FA/FC)"], ["-3db … -24d", "Starts when input exceeds this level"]]
+summary = "What starts the recording."
+page = 26
+
+[[entry]]
+section = "m-sampling"
+name = "Mic sensitivity"
+combo = "LEVEL knob (in sampling mode)"
+controls = ["level", "sampling"]
+values = [["G. 0 – G.255", ""]]
+summary = "Input gain. Aim for the last four meter buttons (-3…0 dB) to flash only occasionally."
+page = 26
+
+[[entry]]
+section = "m-sampling"
+name = "Step sampling"
+combo = "SHIFT + PITCH (in sampling mode)"
+controls = ["shift", "pitch", "sampling"]
+values = [["S.OFF", ""], ["S. 2 – S. 64", "Number of slices"]]
+summary = "Record several equal-length takes into one pad, mapped to notes 60 (C4) upward."
+page = 26
+
+# ───────────────────────────── effects ─────────────────────────────
+
+[[entry]]
+section = "fx"
+name = "DJFX Looper"
+controls = ["looper", "mfx"]
+summary = "Short-cycle loop with variable direction and speed for turntable effects. Has its own button."
+values = [
+  ["CTRL1 LENGTH", "0.230–0.012 s"],
+  ["CTRL2 SPEED", "-100–100 (negative = reverse, 0 = stop)"],
+  ["CTRL3 LOOP SW", "Off / On: capture the loop"],
+]
+page = 123
+
+[[entry]]
+section = "fx"
+name = "Chromatic PS"
+controls = ["pitch-fx", "mfx"]
+summary = "Two-voice pitch shifter in semitone steps. Has its own button."
+values = [
+  ["CTRL1 / 2 PITCH1 / PITCH2", "-24–12 semitones"],
+  ["CTRL3 BALANCE", "Dry/wet"],
+  ["SHIFT + CTRL1 / 2 PAN1 / PAN2", "L50–C–r50"],
+]
+page = 124
+
+[[entry]]
+section = "fx"
+name = "Sync Delay"
+controls = ["delay", "mfx"]
+summary = "Tempo-synced echo. Has its own button."
+values = [
+  ["CTRL1 TIME", "1/32 … 1/1 (t triplet, d dotted)"],
+  ["CTRL2 FEEDBACK", "0–99 %"],
+  ["CTRL3 LEVEL", "0–100"],
+  ["SHIFT + CTRL1 L DAMP F", "FLAT, 80–800 Hz"],
+  ["SHIFT + CTRL2 H DAMP F", "630 Hz – 12.5k, FLAT"],
+]
+page = 125
+
+[[entry]]
+section = "fx"
+name = "Filter+Drive"
+controls = ["filter", "mfx"]
+summary = "Filter with overdrive. Has its own button."
+values = [
+  ["CTRL1 CUTOFF", "20 Hz–16k"],
+  ["CTRL2 RESONANCE", "0–100"],
+  ["CTRL3 DRIVE", "0–100"],
+  ["SHIFT + CTRL1 FLT TYPE", "hPF / LPF"],
+  ["SHIFT + CTRL2 LOW FREQ", "20 Hz–16k"],
+  ["SHIFT + CTRL3 LOW GAIN", "-24–24 dB"],
+]
+page = 126
+
+[[entry]]
+section = "fx"
+name = "Scatter"
+controls = ["scatter", "mfx"]
+summary = "Rearranges the loop step by step (direction, gate length) for a glitchy groove. Has its own button."
+values = [
+  ["CTRL1 TYPE", "1–10"],
+  ["CTRL2 DEPTH", "10–100"],
+  ["CTRL3 SCATTER", "Off / On"],
+  ["SHIFT + CTRL1 SPEED", "SnGL / dbL"],
+]
+page = 127
+
+[[entry]]
+section = "fx"
+name = "Isolator"
+display = "iSo"
+controls = ["mfx"]
+summary = "3-band DJ kill EQ."
+values = [["CTRL1 / 2 / 3 LOW / MID / HIGH", "-Inf, -47.9–12 dB"]]
+page = 128
+
+[[entry]]
+section = "fx"
+name = "Resonator"
+display = "rES"
+controls = ["mfx"]
+summary = "Karplus-Strong resonators (up to 6) tuned to a note or chord."
+values = [
+  ["CTRL1 ROOT", "C-1–G9"],
+  ["CTRL2 BRIGHT", "0–100"],
+  ["CTRL3 FEEDBACK", "0–99 %"],
+  ["SHIFT + CTRL1 CHORD", "root, Oct, Updn, P5, mn3…mn11, mJ3…mJ11"],
+  ["SHIFT + CTRL2 PANNING", "0–100"],
+  ["SHIFT + CTRL3 ENV MOD", "0–100"],
+]
+page = 129
+
+[[entry]]
+section = "fx"
+name = "Stopper"
+display = "StoP"
+controls = ["mfx"]
+summary = "Turntable-stop slowdown."
+values = [
+  ["CTRL1 DEPTH", "0–100"],
+  ["CTRL2 RATE", "4/1 … 1/64"],
+  ["CTRL3 RESONANCE", "0–100"],
+  ["SHIFT + CTRL1 FLT MOD", "0–100"],
+  ["SHIFT + CTRL2 AMP MOD", "0–100"],
+]
+page = 130
+
+[[entry]]
+section = "fx"
+name = "Super Filter"
+display = "S.FLt"
+controls = ["mfx"]
+summary = "Steep filter with optional cyclic (LFO) modulation."
+values = [
+  ["CTRL1 CUTOFF", "0–100"],
+  ["CTRL2 RESONANCE", "0–100"],
+  ["CTRL3 FLT TYPE", "LPF / bPF / hPF"],
+  ["SHIFT + CTRL1 DEPTH", "0–100"],
+  ["SHIFT + CTRL2 RATE", "0–100, or 2/1 … 1/64t when synced"],
+  ["SHIFT + CTRL3 SYNC", "Off / On"],
+]
+page = 131
+
+[[entry]]
+section = "fx"
+name = "Vinyl Sim"
+display = "vny"
+controls = ["mfx"]
+summary = "SP-404SX-style record simulation."
+values = [["CTRL1 FREQUENCY", "0–100"], ["CTRL2 NOISE", "0–100"], ["CTRL3 WOW FLUT", "0–100"]]
+page = 132
+
+[[entry]]
+section = "fx"
+name = "Cassette Sim"
+display = "CSt"
+controls = ["mfx"]
+summary = "Tape simulation."
+values = [
+  ["CTRL1 TONE", "0–100"],
+  ["CTRL2 HISS", "0–100"],
+  ["CTRL3 AGE", "0–60 years"],
+  ["SHIFT + CTRL1 DRIVE", "0–100"],
+  ["SHIFT + CTRL2 WOW FLUT", "0–100"],
+  ["SHIFT + CTRL3 CATCH", "0–100 (tape stretch)"],
+]
+page = 133
+
+[[entry]]
+section = "fx"
+name = "Lo-fi"
+display = "LoFi"
+controls = ["mfx"]
+summary = "Tonal degradation. Can get very loud, so be careful."
+values = [
+  ["CTRL1 PRE FILT", "1–6"],
+  ["CTRL2 LOFI TYPE", "1–9"],
+  ["CTRL3 TONE", "-100–100"],
+  ["SHIFT + CTRL1 CUTOFF", "200 Hz–8k"],
+  ["SHIFT + CTRL2 BALANCE", "Dry/wet"],
+  ["SHIFT + CTRL3 LEVEL", "0–100"],
+]
+page = 134
+
+[[entry]]
+section = "fx"
+name = "Reverb (MFX)"
+display = "rEv"
+controls = ["mfx"]
+summary = "Insert reverb, separate from the send reverb."
+values = [
+  ["CTRL1 TYPE", "Amb / room / hAL1 / hAL2"],
+  ["CTRL2 TIME", "0–100"],
+  ["CTRL3 LEVEL", "0–100"],
+  ["SHIFT + CTRL1 LOW CUT", "FLAT, 20–800 Hz"],
+  ["SHIFT + CTRL2 HIGH CUT", "630 Hz–12.5k, FLAT"],
+  ["SHIFT + CTRL3 PRE DELAY", "0–100 ms"],
+]
+page = 135
+
+[[entry]]
+section = "fx"
+name = "Chorus"
+display = "Cho"
+controls = ["mfx"]
+summary = "Width and richness."
+values = [
+  ["CTRL1 DEPTH", "0–100"],
+  ["CTRL2 RATE", "0.33–2.30 s"],
+  ["CTRL3 BALANCE", "Dry/wet"],
+  ["SHIFT + CTRL1 / 2 EQ LOW / HIGH", "-15–15 dB"],
+  ["SHIFT + CTRL3 LEVEL", "0–100"],
+]
+page = 136
+
+[[entry]]
+section = "fx"
+name = "Flanger"
+display = "FLnG"
+controls = ["mfx"]
+summary = "Jet-plane sweep."
+values = [
+  ["CTRL1 DEPTH", "0–100"],
+  ["CTRL2 RATE", "0–100, or 4.000–0.016 bars when synced"],
+  ["CTRL3 MANUAL", "0–100"],
+  ["SHIFT + CTRL1 RESONANCE", "0–100"],
+  ["SHIFT + CTRL2 BALANCE", "Dry/wet"],
+  ["SHIFT + CTRL3 SYNC", "Off / On"],
+]
+page = 137
+
+[[entry]]
+section = "fx"
+name = "Phaser"
+display = "PhAS"
+controls = ["mfx"]
+summary = "Phase-shift modulation."
+values = [
+  ["CTRL1 DEPTH", "0–100"],
+  ["CTRL2 RATE", "0–100, or 4.000–0.016 bars when synced"],
+  ["CTRL3 MANUAL", "0–100"],
+  ["SHIFT + CTRL1 RESONANCE", "0–100"],
+  ["SHIFT + CTRL2 BALANCE", "Dry/wet"],
+  ["SHIFT + CTRL3 SYNC", "Off / On"],
+]
+page = 138
+
+[[entry]]
+section = "fx"
+name = "Tremolo/Pan"
+display = "trEm"
+controls = ["mfx"]
+summary = "Cyclic volume or pan modulation."
+values = [
+  ["CTRL1 DEPTH", "0–100"],
+  ["CTRL2 RATE", "0–100, or 1.000–0.010 when synced"],
+  ["CTRL3 TYPE", "trE (tremolo) / PAn (auto-pan)"],
+  ["SHIFT + CTRL1 WAVE", "tri, Sqr, Sin, SAW1, SAW2, trP"],
+  ["SHIFT + CTRL2 SYNC", "Off / On"],
+]
+page = 139
+
+[[entry]]
+section = "fx"
+name = "Ring Mod"
+display = "rinG"
+controls = ["mfx"]
+summary = "Metallic ring modulation."
+values = [
+  ["CTRL1 FREQUENCY", "0–100"],
+  ["CTRL2 SENS", "0–100"],
+  ["CTRL3 BALANCE", "Dry/wet"],
+  ["SHIFT + CTRL1 POLARITY", "Off / On"],
+  ["SHIFT + CTRL2 / 3 EQ LOW / HIGH", "-15–15 dB"],
+]
+page = 140
+
+[[entry]]
+section = "fx"
+name = "Crusher"
+display = "CrSh"
+controls = ["mfx"]
+summary = "Sample-rate reduction."
+values = [["CTRL1 FILTER", "331 Hz–15.4k pre-filter"], ["CTRL2 RATE", "0–100 (higher = crunchier)"], ["CTRL3 BALANCE", "Dry/wet"]]
+page = 141
+
+[[entry]]
+section = "fx"
+name = "Compressor"
+display = "ComP"
+controls = ["mfx"]
+summary = "Dynamics smoothing. Can get very loud."
+values = [["CTRL1 SUSTAIN", "0–100"], ["CTRL2 ATTACK", "0–100"], ["CTRL3 RATIO", "0–100"], ["SHIFT + CTRL1 LEVEL", "0–100"]]
+page = 142
+
+# ───────────────────────────── how to: play ─────────────────────────────
+
+[[entry]]
+section = "h-play"
+name = "Switch sample bank"
+controls = ["bank"]
+steps = ["Press BANK A/E–D/H once for A–D (lit), twice for E–H (blinking)."]
+summary = "48 samples = 8 banks × 6 pads."
+page = 11
+
+[[entry]]
+section = "h-play"
+name = "Play pads as a keyboard"
+controls = ["pads", "granular", "kybd", "oct-down", "oct-up"]
+steps = [
+  "Press a pad (or GRANULAR) to select it.",
+  "Press KYBD (lit): the step buttons become keys.",
+  "Play. OCT- / OCT+ shift octaves; press both to reset.",
+  "Press KYBD again to return to step buttons.",
+]
+notes = ["Chopped or step-sampled pads play their slices instead of pitched notes."]
+page = 19
+
+[[entry]]
+section = "h-play"
+name = "Play chords (polyphonic)"
+controls = ["shift", "gate", "kybd"]
+steps = ["Select the pad.", "SHIFT + GATE until 'PoLy' shows.", "Turn on KYBD and play several keys."]
+summary = "Up to 16 voices of one sample."
+page = 18
+
+[[entry]]
+section = "h-play"
+name = "Gate vs one-shot"
+controls = ["gate"]
+steps = ["Select the pad.", "GATE on = plays while held. GATE off = plays to the end."]
+page = 14
+
+[[entry]]
+section = "h-play"
+name = "Loop / reverse a sample"
+controls = ["loop", "shift"]
+steps = ["Select the pad.", "LOOP toggles looping.", "SHIFT + LOOP cycles FrWd → rvrS → ALt."]
+notes = ["Stuck loop in one-shot mode? Press the pad again, or SHIFT + C (EXIT) to stop everything."]
+page = 15
+
+[[entry]]
+section = "h-play"
+name = "Lo-Fi a pad"
+controls = ["lofi", "shift"]
+steps = ["Select the pad.", "LO-FI toggles it.", "SHIFT + LO-FI → LoFi → ENTER → turn for intensity → EXIT."]
+page = 12
+
+[[entry]]
+section = "h-play"
+name = "Tweak a sample's sound"
+controls = ["shift", "k-fs", "k-g", "k-gs", "k-a"]
+steps = [
+  "Select the pad.",
+  "SHIFT + F# (P.ENV), G (VOICE), G# (FILTER) or A (MIXER).",
+  "TEMPO/VALUE picks the parameter, ENTER opens it, TEMPO/VALUE edits.",
+  "Or use the knobs directly (see Knob functions).",
+  "EXIT twice to leave. WRITE to keep.",
+]
+page = 29
+
+[[entry]]
+section = "h-play"
+name = "Undo pad edits"
+controls = ["shift", "oct-up"]
+steps = ["SHIFT + OCT+ (MENU) → rL.Pd → ENTER."]
+page = 21
+
+# ───────────────────────────── how to: sample ─────────────────────────────
+
+[[entry]]
+section = "h-sample"
+name = "Record a sample"
+controls = ["sampling", "pads"]
+steps = [
+  "SAMPLING (lit): sampling mode.",
+  "Press an empty (blinking) pad. SAMPLING blinks.",
+  "SAMPLING to start (or wait for the trigger).",
+  "SAMPLING to stop. It normalizes ('norm'), writes ('Writ'), then shows 'donE'.",
+]
+notes = ["Occupied pads can't be chosen. Delete the sample first.", "Set rate, mono/stereo, length and trigger before starting (see Sampling mode controls)."]
+page = 22
+
+[[entry]]
+section = "h-sample"
+name = "Set input level"
+controls = ["sampling", "level", "shift"]
+steps = [
+  "Enter sampling mode. Step buttons show the meter (-72 … 0 dB).",
+  "Turn LEVEL so the top four segments (-3 … 0 dB) light only occasionally.",
+  "Hold SHIFT to see the peak.",
+]
+notes = ["If MIX IN distorts without the 0 dB segment lighting, lower the source or MENU → In.G."]
+page = 24
+
+[[entry]]
+section = "h-sample"
+name = "Resample the P-6 itself"
+controls = ["sampling", "pads", "level"]
+steps = [
+  "Enter sampling mode and choose an empty pad.",
+  "Start recording and play the pads or pattern (Trigger SynC lets ▶ start it in time).",
+  "Balance using the pads' LEVEL outside sampling mode, or the pattern's MENU → vOL.",
+]
+page = 24
+
+[[entry]]
+section = "h-sample"
+name = "Step sampling (multi-slice pad)"
+controls = ["sampling", "shift", "pitch", "start", "kybd"]
+steps = [
+  "In sampling mode, SHIFT + turn PITCH to S. 2–S. 64. Set the length with START.",
+  "Pick an empty pad.",
+  "Press SAMPLING for each take. TEMPO/VALUE + SAMPLING redoes a slice.",
+  "'End' blinks when all slices are done. Slices map to notes 60 (C4) upward.",
+]
+notes = ["Play slices via KYBD. Pitch doesn't change per key."]
+page = 27
+
+[[entry]]
+section = "h-sample"
+name = "Copy / swap / delete a sample"
+controls = ["pads", "shift", "play", "delete"]
+steps = [
+  "Copy/swap: hold the pad, SHIFT + ▶ → COPY or EXCG → ENTER → destination pad → ENTER.",
+  "Delete: DELETE ('dEL') → blinking pad(s) → DELETE.",
+]
+page = 30
+
+# ───────────────────────────── how to: granular ─────────────────────────────
+
+[[entry]]
+section = "h-granular"
+name = "Use a sample as granular source"
+controls = ["pattern", "granular", "pads"]
+steps = ["Hold PATTERN, press GRANULAR and the source pad.", "Press GRANULAR to play (or KYBD to play it chromatically)."]
+page = 34
+
+[[entry]]
+section = "h-granular"
+name = "Shape the grains"
+controls = ["shift", "k-g", "granular", "ctrl1", "ctrl2", "ctrl3", "start", "end"]
+steps = [
+  "SHIFT + G (VOICE) with GRANULAR selected.",
+  "Edit Head Position/Speed, Spread, Grains, Shape, Size, jitter and so on.",
+  "Quick: top screen START = Head Position, END = Grain Size. VOICE screen CTRL1–3 = Spread / Grains / Shape.",
+  "Press GRANULAR to audition. Step LEDs show the grain activity.",
+  "EXIT twice.",
+]
+notes = ["Granular settings are saved in the pattern. Revert with MENU → rL.Gr."]
+page = 35
+
+# ───────────────────────────── how to: pattern ─────────────────────────────
+
+[[entry]]
+section = "h-pattern"
+name = "Select a pattern"
+controls = ["pattern", "steps", "tempo"]
+steps = [
+  "PATTERN (lit).",
+  "Optional: hold PATTERN + step 1–4 for bank 1–4.",
+  "Release and press step 1–16 (or turn TEMPO/VALUE).",
+  "PATTERN again to exit.",
+]
+notes = ["While playing, the choice is queued (blinking) until the current pattern ends.", "64 patterns: banks 1–4 × 16. 1-01…1-16 are presets."]
+page = 41
+
+[[entry]]
+section = "h-pattern"
+name = "Set tempo"
+controls = ["tempo", "shift"]
+steps = ["Turn TEMPO/VALUE on the top screen (40–300).", "SHIFT + turn for 0.1 steps."]
+notes = ["Tempo is saved per pattern."]
+page = 40
+
+[[entry]]
+section = "h-pattern"
+name = "Loop a few steps live"
+controls = ["play", "shift", "pattern", "steps"]
+steps = ["▶ to play.", "SHIFT + PATTERN (blinking).", "Hold the steps to loop.", "PATTERN to exit."]
+page = 43
+
+[[entry]]
+section = "h-pattern"
+name = "Swing / length / pages"
+controls = ["shift", "k-d", "k-ds", "k-e", "k-f"]
+steps = ["SHIFT + D: shuffle.", "SHIFT + D#: last step.", "SHIFT + E / F: page ◀ / ▶."]
+page = 62
+
+[[entry]]
+section = "h-pattern"
+name = "Revert a pattern"
+controls = ["shift", "oct-up", "kybd"]
+steps = ["SHIFT + OCT+ → rL.Pt (everything) or rL.Sq (sequence only) → ENTER.", "Shortcut: KYBD + OCT+ when ● and PATTERN are off."]
+page = 68
+
+# ───────────────────────────── how to: rec ─────────────────────────────
+
+[[entry]]
+section = "h-rec"
+name = "Record in real time"
+controls = ["rec", "play", "pads", "kybd"]
+steps = [
+  "● (standby).",
+  "▶ starts recording (count-in: MENU → Cnt.I. Metronome: PATTERN + ●).",
+  "Play the pads, GRANULAR, KYBD keys or external MIDI.",
+  "● to stop recording.",
+]
+notes = ["SHIFT + ● toggles REC quantize.", "PITCH/START/END/LEVEL moves are recorded as motions. CTRL1–3 are not."]
+page = 45
+
+[[entry]]
+section = "h-rec"
+name = "Step input"
+controls = ["pads", "pattern", "steps"]
+steps = [
+  "Select a pad (PATTERN + pad selects silently).",
+  "Press step buttons to toggle notes.",
+  "Hold step + knob to lock a value. Hold step + pad sets velocity. Hold step + KYBD makes a tie.",
+]
+page = 49
+
+[[entry]]
+section = "h-rec"
+name = "Enter melody notes / chords per step"
+controls = ["rec", "kybd", "tempo", "steps", "tie"]
+steps = [
+  "Make sure KYBD is off, then press ● (display 'St.' + step).",
+  "Choose the step with TEMPO/VALUE or a step button.",
+  "KYBD on, then tap keys to add/remove notes (up to 8 per step).",
+  "TIE adds a note tied from the previous step.",
+]
+notes = ["Set the pad to PoLy for chords."]
+page = 53
+
+[[entry]]
+section = "h-rec"
+name = "Clear knob motions"
+controls = ["shift", "oct-down", "k-cs", "rec"]
+steps = [
+  "Whole pattern: SHIFT + OCT- ('CLr.m') → ENTER.",
+  "One step: ● → choose step → SHIFT + OCT- → ENTER.",
+  "Only one knob: after SHIFT + OCT-, turn that knob ('CLr' or 'nonE').",
+]
+page = 48
+
+[[entry]]
+section = "h-rec"
+name = "Probability / ratchets / micro-timing"
+controls = ["steps", "granular", "tempo"]
+steps = ["Hold the step, tap GRANULAR to cycle fields, turn TEMPO/VALUE."]
+notes = ["See Menus → Step data for the values."]
+page = 60
+
+# ───────────────────────────── how to: fx ─────────────────────────────
+
+[[entry]]
+section = "h-fx"
+name = "Pick and play an effect"
+controls = ["mfx", "steps", "tempo", "ctrl1", "ctrl2", "ctrl3"]
+steps = [
+  "Quick: LOOPER / PITCH / DELAY / FILTER / SCATTER buttons.",
+  "Others: hold MFX + step button (or turn TEMPO/VALUE) to choose, MFX to toggle.",
+  "Tweak with CTRL1–3 (SHIFT + CTRL for the second layer).",
+  "PATTERN + effect button = momentary.",
+]
+notes = ["Only sources on BUS EFFECT are processed.", "WRITE → EFCt saves effect settings."]
+page = 70
+
+[[entry]]
+section = "h-fx"
+name = "Keep a sound dry (bus routing)"
+controls = ["mfx", "delay", "pads", "granular", "lofi", "gate", "shift", "pitch", "start", "end"]
+steps = [
+  "MFX + pad: BUS A ↔ EFFECT. MFX + DELAY + pad: BUS B ↔ EFFECT.",
+  "Same for GRANULAR, LO-FI (external input) and GATE (USB input).",
+  "Bus volumes: in MIXER, SHIFT + PITCH / START / END = A / B / EFFECT.",
+]
+notes = ["Pad lights: dim = BUS A, dim blink = BUS B, lit = EFFECT."]
+page = 72
+
+# ───────────────────────────── how to: data ─────────────────────────────
+
+[[entry]]
+section = "h-data"
+name = "Save your work"
+controls = ["shift", "tie", "k-cs"]
+steps = ["SHIFT + TIE (WRITE).", "Choose ALL / PAd / Pd.AL / Ptn / Pt.AL / EFCt.", "ENTER."]
+notes = ["The dot in the display's lower right = unsaved pattern edits."]
+page = 73
+
+[[entry]]
+section = "h-data"
+name = "Connect to a computer / iOS"
+controls = ["usb", "shift", "oct-up", "k-c", "power"]
+steps = [
+  "MENU → A.LnK → OFF, EXIT twice, power-cycle.",
+  "Connect USB-C (data cable). Class compliant, no driver.",
+  "iOS Lightning: use Apple's camera adapter and boot in battery-only mode (hold EXIT at power-on).",
+]
+page = 75
+
+[[entry]]
+section = "h-data"
+name = "Back up / restore patterns"
+controls = ["play", "rec", "power", "kybd"]
+steps = [
+  "Backup: hold ▶ + power on → copy BACKUP/*.PRM → eject → power off.",
+  "Restore: hold ● + power on → copy .PRM into RESTORE → eject → KYBD → wait for 'donE'.",
+]
+notes = ["Samples aren't included. Use export."]
+page = 81
+
+[[entry]]
+section = "h-data"
+name = "Export / import samples"
+controls = ["bank", "sampling", "power", "kybd"]
+steps = [
+  "Export: hold the bank buttons (+ SAMPLING for E–H) + power on → EXPORT/BANK_x/PAD_n.",
+  "Import: hold SAMPLING + power on → put WAV (+ PRM) in IMPORT/BANK_x/PAD_n → eject → KYBD → 'donE'.",
+]
+notes = ["Import: up to 96 kHz, 8/16/24/32-bit. Over-length data is truncated."]
+page = 83
+
+[[entry]]
+section = "h-data"
+name = "Factory reset"
+controls = ["kybd", "power", "granular"]
+steps = ["Back up first!", "Hold KYBD + power on ('FACt').", "Press GRANULAR. Power-cycle after 'donE'."]
+notes = ["Factory samples are not restored. Download them from roland.com."]
+page = 88
+
+# ───────────────────────────── reference ─────────────────────────────
+
+[[entry]]
+section = "r-knobs"
+name = "Sample pad selected"
+summary = "Knob layout per screen. CTRL1–3 follow the selected effect unless noted."
+values = [
+  ["Top", "PITCH Coarse Tune · START Start Pos · END Size · LEVEL Level"],
+  ["P.ENV", "CTRL1 Time KF · CTRL2 Vel Sens · CTRL3 Depth · PITCH/START/END/LEVEL = A/D/S/R"],
+  ["VOICE", "PITCH/START/END/LEVEL = T.Env A/D/S/R"],
+  ["FILTER", "CTRL1 Cutoff KF · CTRL2 Vel Sens · PITCH Type · START Cutoff · END Reso · LEVEL Env Depth"],
+  ["MIXER", "PITCH Pan · START Send Dly · END Send Rev · LEVEL Level"],
+  ["DLY/REV", "PITCH Dly Time · START Dly Level · END Rev Time · LEVEL Rev Level"],
+]
+page = 121
+
+[[entry]]
+section = "r-knobs"
+name = "GRANULAR pad selected"
+summary = "Knob layout per screen for the granular sampler. P.ENV is not available."
+values = [
+  ["Top", "PITCH Coarse Tune · START Head Pos · END Grain Size · LEVEL Level"],
+  ["VOICE", "CTRL1 Spread · CTRL2 Grains · CTRL3 Shape · PITCH/START/END/LEVEL = T.Env A/D/S/R"],
+  ["FILTER", "CTRL1 Cutoff KF · CTRL2 Vel Sens · PITCH Type · START Cutoff · END Reso · LEVEL Env Depth"],
+  ["MIXER", "PITCH Pan · START Send Dly · END Send Rev · LEVEL Level"],
+  ["DLY/REV", "PITCH Dly Time · START Dly Level · END Rev Time · LEVEL Rev Level"],
+]
+page = 121
+
+[[entry]]
+section = "r-misc"
+name = "MIDI defaults"
+summary = "Default channels and mapping (firmware 1.02)."
+values = [
+  ["Ch 11", "Sample pads (notes 48–95 = A-1 … H-6)"],
+  ["Ch 5", "Granular"],
+  ["Ch 15", "Auto (selected pad, chromatic + CC)"],
+  ["Ch 16", "Program change (patterns 0–63)"],
+  ["Clock", "Tx/Rx clock, start, stop. Continue is received as start"],
+]
+page = 144
+
+[[entry]]
+section = "r-misc"
+name = "What's saved where"
+summary = "Pads are global; patterns carry their own mix, mutes and granular sound."
+values = [
+  ["Per pad (global)", "Sample, LO-FI, GATE, poly, LOOP, direction, P.ENV, VOICE, FILTER, MIXER"],
+  ["Per pattern", "Sequence, vOL, trAn, P.SCL, mutes, P.qnt, GRANULAR sound, tempo, delay/reverb (if GL.d.r Off)"],
+  ["Not saved", "Bus volumes, master probability"],
+]
+page = 38

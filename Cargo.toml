@@ -1,0 +1,19 @@
+[package]
+name = "rp6-tui"
+version = "0.1.0"
+edition = "2024"
+description = "Interactive cheatsheet for the Roland P-6 sampler, in the terminal and the browser"
+
+[dependencies]
+anyhow = "1"
+serde = { version = "1", features = ["derive"] }
+ratatui = { version = "0.30", default-features = false, features = ["std", "all-widgets", "layout-cache", "underline-color", "unstable-rendered-line-info"] }
+toml = "0.8"
+fuzzy-matcher = "0.3"
+web-time = "1"
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+ratatui = { version = "0.30", features = ["crossterm"] }
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+ratzilla = "0.3.1"

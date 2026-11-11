@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>P-6 Cheatsheet</title>
+    <meta name="description" content="Interactive cheatsheet for the Roland P-6 sampler" />
+    <link data-trunk rel="rust" data-bin="rp6-tui" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+        background: #121214;
+        color: #e6e6e6;
+      }
+      body {
+        font-family: "JetBrains Mono", "Fira Code", "DejaVu Sans Mono", Menlo, Consolas, monospace;
+        font-size: 16.5px;
+      }
+      /* Ratzilla 0.3 lays out its grid from the measured cell size but tells ratatui
+         the terminal is (window / 10x20px) cells, so pin every cell to exactly 10x20px
+         (the !important beats Ratzilla's inline styles) or the app leaves an empty
+         margin. The font size above is picked to fill a 10px-wide cell. */
+      pre {
+        margin: 0;
+        font: inherit;
+        height: 20px !important;
+        line-height: 20px !important;
+      }
+      pre > span {
+        width: 10px !important;
+      }
+      [tabindex]:focus {
+        outline: none;
+      }
+    </style>
+    <script>
+      // The app is keyboard-driven: keep the browser from acting on keys it uses
+      // (Tab moving focus, arrows/space/page keys scrolling, '/' quick find, Ctrl-P printing).
+      const APP_KEYS = new Set(["Tab", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight",
+        "PageUp", "PageDown", "Home", "End", " ", "/", "'", "Backspace", "Enter", "Escape"]);
+      window.addEventListener("keydown", (e) => {
+        if (APP_KEYS.has(e.key) || (e.ctrlKey && ["p", "u", "l"].includes(e.key))) e.preventDefault();
+      }, { capture: true });
+
+      // Ratzilla listens for keys on its grid element; keep it focused.
+      const focusGrid = () => document.querySelector("[tabindex]")?.focus({ preventScroll: true });
+      new MutationObserver(focusGrid).observe(document.documentElement, { childList: true, subtree: true });
+      window.addEventListener("click", focusGrid);
+      window.addEventListener("focus", focusGrid);
+    </script>
+  </head>
+  <body></body>
+</html>
